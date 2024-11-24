@@ -49,7 +49,7 @@
             <div class="row container-fluid">
                 <div class="col align-items-center" style="margin: 3em 0 3em 3em">
                     <img src="{{ asset('img/LogoPutih.png') }}" alt="" width="250px">
-                    <div class="icon-container">
+                    <div class="icon-container d-flex justify-content-between" style="max-width: 250px;">
                         <a href="" class="icon"><img src="{{ asset('img/facebookLogo.png') }}" alt=""
                                 width="50px"></a>
                         <a href="" class="icon"><img src="{{ asset('img/twitterLogo.png') }}" alt=""

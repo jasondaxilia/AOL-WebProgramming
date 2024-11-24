@@ -39,17 +39,17 @@
             </div>
             <div class="col d-grid align-items-center py-5 gap-3" style="padding: 0; margin-left: 250px">
                 <div class="row" style="padding-left: 75px">
-                    <div class=" justify-content-center" style="font-size: 50px;font-weight: 700; font-family: Montserrat">1
+                    <div style="font-size: 60px;font-weight: 700; font-family: Montserrat">1
                         in 11</div>
                     <div style="font-size: 18px; font-weight: 600; font-family: Montserrat">People experience hunger</div>
                 </div>
                 <div class="row" style="padding-left: 75px">
-                    <div style="font-size: 50px;font-weight: 700; font-family: Montserrat">733 Million</div>
+                    <div style="font-size: 60px;font-weight: 700; font-family: Montserrat">733 Million</div>
                     <div style="font-size: 18px; font-weight: 600; font-family: Montserrat">People Sleep Hungry Each Night
                     </div>
                 </div>
                 <div class="row" style="padding-left: 75px">
-                    <div style="font-size: 50px;font-weight: 700; font-family: Montserrat">130,000</div>
+                    <div style="font-size: 60px;font-weight: 700; font-family: Montserrat">130,000</div>
                     <div style="font-size: 18px; font-weight: 600; font-family: Montserrat">People in the Horn of Africa are
                         on
                         <br>
@@ -76,9 +76,31 @@
                 </form>
             </div>
 
-            <div class="col d-flex justify-content-end align-items-center py-5"
+            <div class="col d-flex justify-content-end align-items-center py-5 text-end"
                 style="padding: 0px; font-size: 70px; font-family: Montserrat; font-weight: 800; color: white">
                 Join Us <br> Fight Against <br> Hunger
+            </div>
+        </div>
+
+        {{-- News --}}
+        <div class="d-grid">
+            <div class="row gap-4 my-5" style="margin: 0">
+                <div class="col text-end"><img src="{{ asset('img/newsImage2.png') }}" alt=""></div>
+                <div class="col">
+                    <div style="font-size: 40px; font-weight: 600; font-family: Montserrat; max-width: 600px;">Tantangan
+                        Zero
+                        Hunger Demi Berantas Kelaparan</div>
+                    <div style="font-size: 15px; font-weight: 600; font-family: Montserrat">19 Oktober 2015 | Tri Wahyuni
+                    </div>
+                    <div style="font-size: 18px; font-weight: 500; font-family: Montserrat; max-width: 600px">Dalam rangka
+                        memperingati Hari Pangan Sedunia yang jatuh pada 16 Oktober lalu,
+                        Direktur Eksekutif
+                        dari United Nations World Food Programme (WFP) Ertharin Cousin
+                    </div>
+                    <button type="button" class="btn btn-outline-warning border-4"
+                        style="color: black;font-size: 20px; font-weight: 600; font-family: Montserrat; padding: 5px 15px 5px 15px">
+                        Find Out More</button>
+                </div>
             </div>
         </div>
     </div>
