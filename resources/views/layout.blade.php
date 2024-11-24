@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark border-bottom mx-5">
+    <nav class="navbar navbar-expand-lg navbar-dark border-bottom mx-5 p-0">
         <div class="navbar container-fluid">
             <a class="navbar-brand " href="#">
                 <img src="{{ asset('img/Logo.png') }}" alt="LogoZeroHunger" width="200px">
@@ -37,9 +37,15 @@
         </div>
     </nav>
 
-    <div class="mx-5">
-        @yield('content')
+    <div>
+        @yield('container')
     </div>
+
+    <footer>
+        <div class="container-fluid d-grid" style="background-color: #D3A029">
+            <div class="col"></div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
