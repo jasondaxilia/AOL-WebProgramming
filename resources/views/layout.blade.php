@@ -44,12 +44,14 @@
         @yield('container')
     </div>
 
-    <footer>
-        <div class="container-fluid d-grid" style="background-color: #D3A029">
-            <div class="row container-fluid">
-                <div class="col align-items-center" style="margin: 3em 0 3em 3em">
-                    <img src="{{ asset('img/LogoPutih.png') }}" alt="" width="250px">
-                    <div class="icon-container d-flex justify-content-between" style="max-width: 250px;">
+    <footer class="d-flex">
+        <div class="container-fluid d-flex justify-content-center" style="background-color: #D3A029">
+            <div class="row justify-content-center" style="padding: 0">
+                <div class="col align-items-center justify-content-center my-5">
+                    <div class="d-flex justify-content-center">
+                        <img src="{{ asset('img/LogoPutih.png') }}" alt="" width="250px">
+                    </div>
+                    <div class="icon-container mt-1 d-flex justify-content-center">
                         <a href="" class="icon"><img src="{{ asset('img/facebookLogo.png') }}" alt=""
                                 width="50px"></a>
                         <a href="" class="icon"><img src="{{ asset('img/twitterLogo.png') }}" alt=""
@@ -60,11 +62,15 @@
                                 width="50px"></a>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="col">asd</div>
-                    <div class="col">asd</div>
-                    <div class="col">asd</div>
+                <div class="mx-auto d-flex justify-content-center">
+                    © 2024 ZeroHunger. All Rights Reserved.
+
                 </div>
+                {{-- <div class="col">
+                    <div class="col">asd</div>
+                    <div class="col">asd</div>
+                    <div class="col">asd</div>
+                </div> --}}
             </div>
         </div>
     </footer>

@@ -77,7 +77,7 @@
             </div>
 
             <div class="col d-flex justify-content-end align-items-center py-5 text-end"
-                style="padding: 0px; font-size: 70px; font-family: Montserrat; font-weight: 800; color: white">
+                style="padding: 0 100px 0 0; font-size: 70px; font-family: Montserrat; font-weight: 800; color: white">
                 Join Us <br> Fight Against <br> Hunger
             </div>
         </div>
@@ -85,12 +85,29 @@
         {{-- News --}}
         <div class="d-grid">
             <div class="row gap-4 my-5" style="margin: 0">
+                <div class="col text-end"><img src="{{ asset('img/newsImage1.png') }}" alt=""></div>
+                <div class="col">
+                    <div style="font-size: 40px; font-weight: 600; font-family: Montserrat; max-width: 600px;">Tokoh Dunia
+                        Dukung SDGs 2030 Zero Hunger</div>
+                    <div style="font-size: 15px; font-weight: 600; font-family: Montserrat">19 Oktober 2015 | Tri Wahyuni
+                    </div>
+                    <div style="font-size: 18px; font-weight: 500; font-family: Montserrat; max-width: 600px">Forum diskusi
+                        global yang diprakarsai Foreign Policy Community of Indonesia (FPCI) kembali mengundang para tokoh
+                        dunia dan pakar dari berbagai bidang untuk mendiskusikan isu-isu terkini dunia
+                    </div>
+                    <button type="button" class="btn btn-outline-warning border-4"
+                        style="color: black;font-size: 20px; font-weight: 600; font-family: Montserrat; padding: 5px 15px 5px 15px">
+                        Find Out More</button>
+                </div>
+            </div>
+            <div class="row gap-4 my-5" style="margin: 0">
                 <div class="col text-end"><img src="{{ asset('img/newsImage2.png') }}" alt=""></div>
                 <div class="col">
                     <div style="font-size: 40px; font-weight: 600; font-family: Montserrat; max-width: 600px;">Tantangan
                         Zero
                         Hunger Demi Berantas Kelaparan</div>
-                    <div style="font-size: 15px; font-weight: 600; font-family: Montserrat">19 Oktober 2015 | Tri Wahyuni
+
+                    <div style="font-size: 15px; font-weight: 600; font-family: Montserrat">4 Sep 2023 | Diananda Rahmasari
                     </div>
                     <div style="font-size: 18px; font-weight: 500; font-family: Montserrat; max-width: 600px">Dalam rangka
                         memperingati Hari Pangan Sedunia yang jatuh pada 16 Oktober lalu,
