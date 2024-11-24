@@ -1,5 +1,5 @@
 @include('layout')
 
 @section('content')
-    <div>kontol</div>
+    <div>TESTING</div>
 @endsection
