@@ -14,23 +14,23 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary gradient-custom">
-        <div class="navbar container">
+    <nav class="navbar navbar-expand-lg navbar-dark border-bottom mx-5">
+        <div class="navbar container-fluid">
             <a class="navbar-brand " href="#">
-                <h3 class="" style="color: white;font-weight: 800"><em>ZeroHunger</em></h3>
+                <img src="{{ asset('img/Logo.png') }}" alt="LogoZeroHunger" width="200px">
             </a>
             <ul class="navbar-nav h3 gap-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white"><strong>Home</strong></a>
+                    <a class="nav-link" href="#" style="color:#D3A029"><strong>Home</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white"><strong>News</strong></a>
+                    <a class="nav-link" href="#" style="color:#D3A029"><strong>News</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white"><strong>About Us</strong></a>
+                    <a class="nav-link" href="#" style="color:#D3A029"><strong>About Us</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#" style="color: white"><strong>Donate!</strong></a>
+                    <a class="nav-link " href="#" style="color:#D3A029"><strong>Donate!</strong></a>
                 </li>
             </ul>
         </div>
