@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Web Apa Kek</title>
+    <title>ZeroHunger</title>
+    <link rel="icon" href="{{ asset('img/MangkokPanas.png') }}" type="">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +37,7 @@
         </div>
     </nav>
 
-    <div>
+    <div class="mx-5">
         @yield('content')
     </div>
 

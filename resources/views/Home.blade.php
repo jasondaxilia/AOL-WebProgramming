@@ -1,5 +1,5 @@
 @include('layout')
 
 @section('content')
-    <div>TESTING</div>
+    <div style="color: black">TESTING</div>
 @endsection
