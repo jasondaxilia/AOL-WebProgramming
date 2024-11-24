@@ -15,6 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <style>
+        body {
+            font-family: montserrat;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,16 +30,17 @@
             </a>
             <ul class="navbar-nav h3 gap-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:#D3A029"><strong>Home</strong></a>
+                    <a class="nav-link" href="#" style="color:#D3A029; font-weight: 700">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:#D3A029"><strong>News</strong></a>
+                    <a class="nav-link" href="#" style="color:#D3A029; font-weight: 700">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:#D3A029"><strong>About Us</strong></a>
+                    <a class="nav-link" href="#" style="color:#D3A029; font-weight: 700">About
+                        Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#" style="color:#D3A029"><strong>Donate!</strong></a>
+                    <a class="nav-link " href="#" style="color:#D3A029; font-weight: 700">Donate!</a>
                 </li>
             </ul>
         </div>
