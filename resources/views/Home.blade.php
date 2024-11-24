@@ -2,17 +2,20 @@
 
 @section('container')
     <div class="d-grid" style="margin: 0px;padding: 0px">
+        {{-- HeroImage --}}
         <div class="row" style="margin: 0 ; overflow: hidden">
             <img src="{{ asset('img/image1.png') }}" alt="" class=""
                 style="margin: 0;padding:0 ; position: relative;">
             <div class=""
-                style="color: white;position: absolute; font-size:60px;font-family: Montserrat;font-weight: 900; padding:250px 0px 0px 100px;">
+                style="color: white;position: absolute; font-size:60px;font-family: Montserrat;font-weight: 900; padding:250px 0px 0px 100px">
                 A World
-                <br>
+            </div>
+            <div class=""
+                style="color: white;position: absolute; font-size:60px;font-family: Montserrat;font-weight: 900; padding:320px 0px 0px 100px">
                 Without Hunger
             </div>
             <div
-                style="color: white;position: absolute; font-size:20px; font-family: Montserrat; font-weight: 400; padding:415px 0px 0px 100px; ">
+                style="color: white;position: absolute; font-size:20px; font-family: Montserrat; font-weight: 400; padding:405px 0px 0px 100px; ">
                 A world without hunger is one where everyone has reliable access
                 <br>
                 to nutritious and sufficient food, free
@@ -24,27 +27,58 @@
                 ensuring no one goes hungry while protecting the environment
             </div>
         </div>
-        <div class="row" style="margin: 0px; overflow: hidden">
-            <div class="col "
-                style="padding: 0px; font-size: 50px; font-family: Montserrat; font-weight: 800; padding: 3em 0 3em 3em">
+
+        {{-- Info --}}
+        <div class="row my-5" style="margin: 0; overflow: hidden;">
+            <div class="col d-flex align-items-center justify-content-end py-5"
+                style="padding: 0px; font-size: 85px; font-family: Montserrat; font-weight: 800;">
                 Currently
                 <br> Happen in
                 <br> Our
                 World
             </div>
-            <div class="col align-items-center" style="padding: 0px">
-                <div>
-                    <div class="row" style="font-size: 40px;font-weight: 400">1 in 11</div>
-                    <div>People experience hunger</div>
+            <div class="col d-grid align-items-center py-5 gap-3" style="padding: 0; margin-left: 250px">
+                <div class="row" style="padding-left: 75px">
+                    <div class=" justify-content-center" style="font-size: 50px;font-weight: 700; font-family: Montserrat">1
+                        in 11</div>
+                    <div style="font-size: 18px; font-weight: 600; font-family: Montserrat">People experience hunger</div>
                 </div>
-                <div>
-                    <div class="row" style="font-size: 40px;font-weight: 400">733 Million</div>
-                    <div>People Sleep Hungry Each Night</div>
+                <div class="row" style="padding-left: 75px">
+                    <div style="font-size: 50px;font-weight: 700; font-family: Montserrat">733 Million</div>
+                    <div style="font-size: 18px; font-weight: 600; font-family: Montserrat">People Sleep Hungry Each Night
+                    </div>
                 </div>
-                <div>
-                    <div class="row" style="font-size: 40px;font-weight: 400">130,000</div>
-                    <div>People in the Horn of Africa are on the brink of death from starvation</div>
+                <div class="row" style="padding-left: 75px">
+                    <div style="font-size: 50px;font-weight: 700; font-family: Montserrat">130,000</div>
+                    <div style="font-size: 18px; font-weight: 600; font-family: Montserrat">People in the Horn of Africa are
+                        on
+                        <br>
+                        the brink of death from starvation
+                    </div>
                 </div>
+            </div>
+        </div>
+
+        {{-- Donation --}}
+        <div class="row d-flex" style="background-color: #D3A029; margin: 0">
+            <div class="col">
+                <form action="">
+                    <div class="row">
+                        <div class="col">Rp10.000</div>
+                        <div class="col">Rp25.000</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Rp50.000</div>
+                        <div class="col">Rp100.000</div>
+                    </div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </form>
+            </div>
+
+            <div class="col d-flex justify-content-end align-items-center py-5"
+                style="padding: 0px; font-size: 70px; font-family: Montserrat; font-weight: 800; color: white">
+                Join Us <br> Fight Against <br> Hunger
             </div>
         </div>
     </div>
