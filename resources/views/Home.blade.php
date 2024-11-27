@@ -83,7 +83,7 @@
                     </div>
                     <div class="text-center pt-3">
                         <button class="button px-5"
-                            style="color: white; background-color: #D3A029; border-radius: 5px">Donate
+                            style="color: white; background-color: #D3A029; border-radius: 10px">Donate
                             Now</button>
                         <div style="font-size: 10px">100% of your donation goes to help those in need</div>
                     </div>
