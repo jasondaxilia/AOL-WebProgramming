@@ -98,7 +98,7 @@
         {{-- News --}}
         <div class="d-grid">
             <div class="row gap-4 my-5" style="margin: 0">
-                <div class="col text-end"><img src="{{ asset('img/newsImage1.png') }}" alt=""></div>
+                <div class="col text-end"><img src="{{ asset('img/NewsImage/newsImage1.png') }}" alt=""></div>
                 <div class="col">
                     <div style="font-size: 40px; font-weight: 600; max-width: 600px;">Tokoh Dunia
                         Dukung SDGs 2030 Zero Hunger</div>
@@ -114,7 +114,7 @@
                 </div>
             </div>
             <div class="row gap-4 my-5" style="margin: 0">
-                <div class="col text-end"><img src="{{ asset('img/newsImage2.png') }}" alt=""></div>
+                <div class="col text-end"><img src="{{ asset('img/NewsImage/newsImage2.png') }}" alt=""></div>
                 <div class="col">
                     <div style="font-size: 40px; font-weight: 600; max-width: 600px;">Tantangan
                         Zero
