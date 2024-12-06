@@ -3,56 +3,65 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\DB;
-use App\Models\Artikel;
 use Illuminate\Http\Request;
+use App\Models\Artikel;
 
 class ArtikelController extends Controller
 {
-    public function insertData()
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
     {
-        $users = [
-            [
-                'judulArtikel' => 'Hunger numbers stubbornly high for three consecutive years as global crises deepen: UN report',
-                'namaPenulisArtikel' => 'Tri Wahyuni',
-                'isiArtikel' => 'Forum diskusi global yang diprakarsai Foreign Policy Community of Indonesia (FPCI) kembali mengundang para tokoh dunia dan pakar dari berbagai bidang untuk mendiskusikan isu-isu terkini dunia ',
-                'tanggalArtikel' => $this->convertDate('24/July/2024'),
-                'artikelImagePath' => 'img/NewsImage/newsImage1.png'
-            ],
-            [
-                'judulArtikel' => 'Tantangan Zero Hunger Demi Berantas Kelaparan',
-                'namaPenulisArtikel' => 'Diananda Rahmasari ',
-                'isiArtikel' => 'Dalam rangka memperingati Hari Pangan Sedunia yang jatuh pada 16 Oktober lalu, Direktur Eksekutif dari United Nations World Food Programme (WFP) Ertharin Cousin ',
-                'tanggalArtikel' => $this->convertDate('4/September/2023'),
-                'artikelImagePath' => 'img/NewsImage/newsImage2.png'
-            ],
-        ];
-
-        DB::table('artikels')->insert($users);
-        return "Data inserted successfully!";
+        $artikels = Artikel::all();
+        return view('InputArtikel')->with('artikels', $artikels);
     }
 
-    private function convertDate($dateString)
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
     {
-        $months = [
-            'Januari' => '01',
-            'Februari' => '02',
-            'Maret' => '03',
-            'April' => '04',
-            'Mei' => '05',
-            'Juni' => '06',
-            'Juli' => '07',
-            'Agustus' => '08',
-            'September' => '09',
-            'Oktober' => '10',
-            'November' => '11',
-            'Desember' => '12'
-        ];
+        //
+    }
 
-        list($day, $monthName, $year) = explode('/', $dateString);
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        //
+    }
 
-        $month = isset($months[$monthName]) ? $months[$monthName] : '00';
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+        //
+    }
 
-        return "{$year}-{$month}-{$day}";
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
+    {
+        //
     }
 }

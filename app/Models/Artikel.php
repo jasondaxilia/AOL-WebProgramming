@@ -9,6 +9,8 @@ class Artikel extends Model
 {
     //
     use HasFactory;
+    protected $table = 'artikels';
+    protected $primaryKey = 'id';
     protected $fillable = ['judulArtikel', 'namaPenulisArtikel', 'isiArtikel', 'tanggalArtikel', 'artikelImagePath'];
 
 }

@@ -7,10 +7,10 @@ Route::get('/', function () {
     return view('Home');
 });
 
-Route::get('/', [ArtikelController::class, '']);
+// Route::post('/InputArtikel', [ArtikelController::class, 'InsertArtikel']);
 
-Route::get('/artikel', [ArtikelController::class, 'index']);
-
-Route::get('/Input-Artikel', function () {
+Route::get('/inputartikel', function () {
     return view('InputArtikel');
 });
+
+Route::resource("/InputArtikel", ArtikelController::class);
