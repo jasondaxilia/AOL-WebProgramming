@@ -4,13 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Laravel\Sanctum\HasApiTokens;
 
 class Artikel extends Model
 {
     //
-    use HasFactory;
-    protected $table = 'artikels';
-    protected $primaryKey = 'id';
+    use HasFactory, HasApiTokens;
     protected $fillable = ['judulArtikel', 'namaPenulisArtikel', 'isiArtikel', 'tanggalArtikel', 'artikelImagePath'];
 
 }

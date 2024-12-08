@@ -8,60 +8,16 @@ use App\Models\Artikel;
 
 class ArtikelController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+    public function store()
     {
-        $artikels = Artikel::all();
-        return view('InputArtikel')->with('artikels', $artikels);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
+        $data = [
+            'judulArtikel' => 'Sample Article Title',
+            'artikelImagePath' => 'path/to/image.jpg',
+            'tanggalArtikel' => '2023-10-01',
+            'namaPenulisArtikel' => 'John Doe',
+            'isiArtikel' => 'This is the content of the article.',
+        ];
+        Artikel::create($data);
+        return response()->json(['message' => 'Data inserted successfully']);
     }
 }

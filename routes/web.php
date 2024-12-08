@@ -7,10 +7,4 @@ Route::get('/', function () {
     return view('Home');
 });
 
-// Route::post('/InputArtikel', [ArtikelController::class, 'InsertArtikel']);
-
-Route::get('/inputartikel', function () {
-    return view('InputArtikel');
-});
-
-Route::resource("/InputArtikel", ArtikelController::class);
+Route::post('/artikel', [ArtikelController::class, 'store']);
