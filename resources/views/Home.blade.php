@@ -59,7 +59,7 @@
         </div>
 
         {{-- Donation --}}
-        <div class="container-fluid row d-flex py-0 px-0 justify-content-center" style="background-color: #D3A029">
+        <div class="row py-0 mx-0 justify-content-center" style="background-color: #D3A029; width: 100vw; margin: 0;">
             <div class="col col-md-3 m-5 py-5" style="border-radius: 15px; background-color: white">
                 <div class="d-grid text-end">
                     <!-- Nominal Options -->
@@ -110,12 +110,21 @@
                     </div>
 
                     <!-- Input Name -->
+<<<<<<< HEAD
                     <div class="row justify-content-center">
                         <input class="justify-content-center text-center"
                             style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid"
                             type="text" placeholder="Name">
                     </div>
 
+=======
+                    <div class="row justify-content-center"> 
+                        <input class="justify-content-center text-center"
+                            style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid" 
+                            type="text" placeholder="Name">
+                    </div>
+        
+>>>>>>> 8cd41fea88267018ab6eecb361b69cb8cd0f80b8
                     <!-- Donate Button -->
                     <div class="text-center pt-3">
                         <button class="button px-5 py-2"
