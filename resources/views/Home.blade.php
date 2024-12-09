@@ -65,36 +65,36 @@
                     <!-- Nominal Options -->
                     <div class="row justify-content-center align-content-center pb-4">
                         <div class="col text-end">
-                            <button class="amount-option btn-primary px-4 py-2" 
+                            <button class="amount-option btn-primary px-4 py-2"
                                 style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp10.000
                             </button>
                         </div>
                         <div class="col text-start">
-                            <button class="amount-option btn-primary px-4 py-2" 
+                            <button class="amount-option btn-primary px-4 py-2"
                                 style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp25.000
                             </button>
                         </div>
                     </div>
                     <div class="row justify-content-center align-content-center pb-4">
                         <div class="col text-end">
-                            <button class="amount-option btn-primary px-4 py-2" 
+                            <button class="amount-option btn-primary px-4 py-2"
                                 style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp50.000
                             </button>
                         </div>
                         <div class="col text-start">
-                            <button class="amount-option btn-primary px-4 py-2" 
+                            <button class="amount-option btn-primary px-4 py-2"
                                 style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp100.000
                             </button>
                         </div>
                     </div>
-        
+
                     <!-- Input Nominal -->
-                    <div class="row justify-content-center"> 
+                    <div class="row justify-content-center">
                         <input class="justify-content-center text-center"
-                            style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid" 
+                            style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid"
                             type="text" placeholder="Rp0,00">
                     </div>
-        
+
                     <!-- Destination Options -->
                     <div class="row justify-content-center align-content-center py-4">
                         <div class="col text-end">
@@ -110,12 +110,12 @@
                     </div>
 
                     <!-- Input Name -->
-                    <div class="row justify-content-center"> 
+                    <div class="row justify-content-center">
                         <input class="justify-content-center text-center"
-                            style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid" 
+                            style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid"
                             type="text" placeholder="Name">
                     </div>
-        
+
                     <!-- Donate Button -->
                     <div class="text-center pt-3">
                         <button class="button px-5 py-2"
@@ -138,7 +138,15 @@
 
         {{-- News --}}
         <div class="d-grid">
-            <div class="row gap-4 my-5" style="margin: 0">
+            @foreach ($artikels as $artikel)
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class=""></div>
+                        <h5 class="card-title">{{ $artikel->judulArtikel }}</h5>
+                    </div>
+                </div>
+            @endforeach
+            {{-- <div class="row gap-4 my-5" style="margin: 0">
                 <div class="col text-end"><img src="{{ asset('img/NewsImage/newsImage1.png') }}" alt=""></div>
                 <div class="col">
                     <div style="font-size: 40px; font-weight: 600; max-width: 600px;">Tokoh Dunia
@@ -153,26 +161,7 @@
                         style="color: black;font-size: 20px; font-weight: 600; padding: 5px 15px 5px 15px">
                         Find Out More</button>
                 </div>
-            </div>
-            <div class="row gap-4 my-5" style="margin: 0">
-                <div class="col text-end"><img src="{{ asset('img/NewsImage/newsImage2.png') }}" alt=""></div>
-                <div class="col">
-                    <div style="font-size: 40px; font-weight: 600; max-width: 600px;">Tantangan
-                        Zero
-                        Hunger Demi Berantas Kelaparan</div>
-
-                    <div style="font-size: 15px; font-weight: 600">4 Sep 2023 | Diananda Rahmasari
-                    </div>
-                    <div style="font-size: 18px; font-weight: 500; max-width: 600px">Dalam rangka
-                        memperingati Hari Pangan Sedunia yang jatuh pada 16 Oktober lalu,
-                        Direktur Eksekutif
-                        dari United Nations World Food Programme (WFP) Ertharin Cousin
-                    </div>
-                    <button type="button" class="btn btn-outline-warning border-4"
-                        style="color: black;font-size: 20px; font-weight: 600; padding: 5px 15px 5px 15px">
-                        Find Out More</button>
-                </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 @endsection

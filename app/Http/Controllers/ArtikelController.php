@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Artikel;
+use Illuminate\Pagination\Paginator;
 
 class ArtikelController extends Controller
 {
@@ -19,5 +20,11 @@ class ArtikelController extends Controller
         ];
         Artikel::create($data);
         return response()->json(['message' => 'Data inserted successfully']);
+    }
+
+    public function getArtikel()
+    {
+        $artikels = Artikel::latest()->paginate(3);
+        return view('home ', compact('artikels'));
     }
 }
