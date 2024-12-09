@@ -59,7 +59,7 @@
         </div>
 
         {{-- Donation --}}
-        <div class="row py-0 mx-0 justify-content-center" style="background-color: #D3A029; width: 100vw; margin: 0;">
+        <div class="row py-0 mx-0 justify-content-center" style="background-color: #D3A029; width: 100%; margin: 0;">
             <div class="col col-md-3 m-5 py-5" style="border-radius: 15px; background-color: white">
                 <div class="d-grid text-end">
                     <!-- Nominal Options -->
