@@ -1,0 +1,12 @@
+.amount-option,
+.destination-option {
+    background-color: #f4f4f4;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.amount-option.active,
+.destination-option.active {
+    background-color: #D3A029 !important;
+    color: #fff !important;
+}

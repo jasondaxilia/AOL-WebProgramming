@@ -59,41 +59,82 @@
         </div>
 
         {{-- Donation --}}
-        <div class=" container-fluid row d-flex py-0 px-0  justify-content-center" style="background-color: #D3A029">
+        <div class="container-fluid row d-flex py-0 px-0 justify-content-center" style="background-color: #D3A029">
             <div class="col col-md-3 m-5 py-5" style="border-radius: 15px; background-color: white">
                 <div class="d-grid text-end">
+                    <!-- Nominal Options -->
                     <div class="row justify-content-center align-content-center pb-4">
-                        <div class="col text-end"><button class="button btn-primary px-4 py-1"
-                                style="width: 150px ;border-color: #D3A029;border-style: solid">Rp10.000</button>
+                        <div class="col text-end">
+                            <button class="amount-option btn-primary px-4 py-2" 
+                                style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp10.000
+                            </button>
                         </div>
-                        <div class="col text-start"><button class="button btn-primary px-4 py-1"
-                                style="width: 150px ;border-color: #D3A029;border-style: solid">Rp25.000</button>
+                        <div class="col text-start">
+                            <button class="amount-option btn-primary px-4 py-2" 
+                                style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp25.000
+                            </button>
                         </div>
                     </div>
+                    <div class="row justify-content-center align-content-center pb-4">
+                        <div class="col text-end">
+                            <button class="amount-option btn-primary px-4 py-2" 
+                                style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp50.000
+                            </button>
+                        </div>
+                        <div class="col text-start">
+                            <button class="amount-option btn-primary px-4 py-2" 
+                                style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp100.000
+                            </button>
+                        </div>
+                    </div>
+        
+                    <!-- Input Nominal -->
+                    <div class="row justify-content-center"> 
+                        <input class="justify-content-center text-center"
+                            style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid" 
+                            type="text" placeholder="Rp0,00">
+                    </div>
+        
+                    <!-- Destination Options -->
                     <div class="row justify-content-center align-content-center py-4">
-                        <div class="col text-end"><button class="button btn-primary px-4 py-1"
-                                style="width: 150px ;border-color: #D3A029;border-style: solid">Rp50.000</button>
+                        <div class="col text-end">
+                            <button class="destination-option btn-primary px-4 py-2"
+                                style="width: 150px ;border-radius: 4px; border-color: #D3A029;border-style: solid">Domestic
+                            </button>
                         </div>
-                        <div class="col text-start"><button class="button btn-primary px-4 py-1"
-                                style="width: 150px ;border-color: #D3A029;border-style: solid">Rp100.000</button>
+                        <div class="col text-start">
+                            <button class="destination-option btn-primary px-4 py-2"
+                                style="width: 150px ;border-radius: 4px; border-color: #D3A029;border-style: solid">International
+                            </button>
                         </div>
                     </div>
-                    <div class="row justify-content-center"> <input class="justify-content-center text-center"
-                            style="width: 327px; border-color: #D3A029;border-style: solid" type="text" placeholder="">
-                    </div>
-                    <div class="text-center pt-3">
-                        <button class="button px-5"
-                            style="color: white; background-color: #D3A029; border-radius: 10px">Donate
-                            Now</button>
-                        <div style="font-size: 10px">100% of your donation goes to help those in need</div>
-                    </div>
-                </div>
+
+            <!-- Input Name -->
+            <div class="row justify-content-center"> 
+                <input class="justify-content-center text-center"
+                    style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid" 
+                    type="text" placeholder="Name">
             </div>
-            <div class="col d-flex justify-content-end align-items-center py-5 text-end"
-                style="max-width: 700px ;font-size: 70px; font-weight: 800; color: white">
-                Join Us <br> Fight Against <br> Hunger
+
+            <!-- Donate Button -->
+            <div class="text-center pt-3">
+                <button class="button px-5 py-2"
+                    style="color: white; background-color: #D3A029; border-radius: 10px">Donate Now</button>
+                <div style="font-size: 10px">100% of your donation goes to help those in need</div>
             </div>
         </div>
+    </div>
+    <div class="col d-flex justify-content-end align-items-center py-5 text-end"
+        style="max-width: 700px ;font-size: 70px; font-weight: 800; color: white">
+        Join Us <br> Fight Against <br> Hunger
+    </div>
+</div>
+
+        <!-- ganti warna option -->
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+        <!-- jsnya -->
+        <script src="{{ asset('js/script.js') }}"></script>
 
         {{-- News --}}
         <div class="d-grid">

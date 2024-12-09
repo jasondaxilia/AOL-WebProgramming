@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('donasis', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->integer('totaldonasis');
+            $table->string('tipedonasis');
             $table->timestamps();
         });
     }
