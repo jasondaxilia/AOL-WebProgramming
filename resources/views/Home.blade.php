@@ -65,36 +65,36 @@
                     <!-- Nominal Options -->
                     <div class="row justify-content-center align-content-center pb-4">
                         <div class="col text-end">
-                            <button class="amount-option btn-primary px-4 py-2" 
+                            <button class="amount-option btn-primary px-4 py-2"
                                 style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp10.000
                             </button>
                         </div>
                         <div class="col text-start">
-                            <button class="amount-option btn-primary px-4 py-2" 
+                            <button class="amount-option btn-primary px-4 py-2"
                                 style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp25.000
                             </button>
                         </div>
                     </div>
                     <div class="row justify-content-center align-content-center pb-4">
                         <div class="col text-end">
-                            <button class="amount-option btn-primary px-4 py-2" 
+                            <button class="amount-option btn-primary px-4 py-2"
                                 style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp50.000
                             </button>
                         </div>
                         <div class="col text-start">
-                            <button class="amount-option btn-primary px-4 py-2" 
+                            <button class="amount-option btn-primary px-4 py-2"
                                 style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp100.000
                             </button>
                         </div>
                     </div>
-        
+
                     <!-- Input Nominal -->
-                    <div class="row justify-content-center"> 
+                    <div class="row justify-content-center">
                         <input class="justify-content-center text-center"
-                            style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid" 
+                            style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid"
                             type="text" placeholder="Rp0,00">
                     </div>
-        
+
                     <!-- Destination Options -->
                     <div class="row justify-content-center align-content-center py-4">
                         <div class="col text-end">
@@ -109,26 +109,26 @@
                         </div>
                     </div>
 
-            <!-- Input Name -->
-            <div class="row justify-content-center"> 
-                <input class="justify-content-center text-center"
-                    style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid" 
-                    type="text" placeholder="Name">
-            </div>
+                    <!-- Input Name -->
+                    <div class="row justify-content-center">
+                        <input class="justify-content-center text-center"
+                            style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid"
+                            type="text" placeholder="Name">
+                    </div>
 
-            <!-- Donate Button -->
-            <div class="text-center pt-3">
-                <button class="button px-5 py-2"
-                    style="color: white; background-color: #D3A029; border-radius: 10px">Donate Now</button>
-                <div style="font-size: 10px">100% of your donation goes to help those in need</div>
+                    <!-- Donate Button -->
+                    <div class="text-center pt-3">
+                        <button class="button px-5 py-2"
+                            style="color: white; background-color: #D3A029; border-radius: 10px">Donate Now</button>
+                        <div style="font-size: 10px">100% of your donation goes to help those in need</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-end align-items-center py-5 text-end"
+                style="max-width: 700px ;font-size: 70px; font-weight: 800; color: white">
+                Join Us <br> Fight Against <br> Hunger
             </div>
         </div>
-    </div>
-    <div class="col d-flex justify-content-end align-items-center py-5 text-end"
-        style="max-width: 700px ;font-size: 70px; font-weight: 800; color: white">
-        Join Us <br> Fight Against <br> Hunger
-    </div>
-</div>
 
         <!-- ganti warna option -->
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
