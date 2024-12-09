@@ -13,7 +13,7 @@ return new class extends Migration {
         Schema::create('artikels', function (Blueprint $table) {
             $table->id();
             $table->string('judulArtikel');
-            $table->string('');
+            $table->string('namaPenulisArtikel');
             $table->text('isiArtikel');
             $table->date('tanggalArtikel');
             $table->string('artikelImagePath');
