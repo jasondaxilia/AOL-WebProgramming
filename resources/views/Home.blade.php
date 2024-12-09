@@ -141,6 +141,7 @@
             @foreach ($artikels as $artikel)
                 <div class="card mb-3">
                     <div class="card-body">
+                        {{-- udh connect sisa dimasukin datanya sama lengkapin tampilan --}}
                         <div class=""></div>
                         <h5 class="card-title">{{ $artikel->judulArtikel }}</h5>
                     </div>
