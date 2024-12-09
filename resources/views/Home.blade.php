@@ -59,7 +59,7 @@
         </div>
 
         {{-- Donation --}}
-        <div class="container-fluid row d-flex py-0 px-0 justify-content-center" style="background-color: #D3A029">
+        <div class="row py-0 mx-0 justify-content-center" style="background-color: #D3A029; width: 100vw; margin: 0;">
             <div class="col col-md-3 m-5 py-5" style="border-radius: 15px; background-color: white">
                 <div class="d-grid text-end">
                     <!-- Nominal Options -->
@@ -109,26 +109,26 @@
                         </div>
                     </div>
 
-            <!-- Input Name -->
-            <div class="row justify-content-center"> 
-                <input class="justify-content-center text-center"
-                    style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid" 
-                    type="text" placeholder="Name">
+                    <!-- Input Name -->
+                    <div class="row justify-content-center"> 
+                        <input class="justify-content-center text-center"
+                            style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid" 
+                            type="text" placeholder="Name">
+                    </div>
+        
+                    <!-- Donate Button -->
+                    <div class="text-center pt-3">
+                        <button class="button px-5 py-2"
+                            style="color: white; background-color: #D3A029; border-radius: 10px">Donate Now</button>
+                        <div style="font-size: 10px">100% of your donation goes to help those in need</div>
+                    </div>
+                </div>
             </div>
-
-            <!-- Donate Button -->
-            <div class="text-center pt-3">
-                <button class="button px-5 py-2"
-                    style="color: white; background-color: #D3A029; border-radius: 10px">Donate Now</button>
-                <div style="font-size: 10px">100% of your donation goes to help those in need</div>
+            <div class="col d-flex justify-content-end align-items-center py-5 text-end"
+                style="max-width: 700px ;font-size: 70px; font-weight: 800; color: white">
+                Join Us <br> Fight Against <br> Hunger
             </div>
         </div>
-    </div>
-    <div class="col d-flex justify-content-end align-items-center py-5 text-end"
-        style="max-width: 700px ;font-size: 70px; font-weight: 800; color: white">
-        Join Us <br> Fight Against <br> Hunger
-    </div>
-</div>
 
         <!-- ganti warna option -->
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
