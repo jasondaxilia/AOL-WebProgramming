@@ -142,37 +142,27 @@
 
         {{-- News --}}
         <div class="class=vstack gap-2 mx-auto my-5" style="width: 50%">
-            @foreach ($artikels as $artikel)
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="col">
-                            <img src="{{ asset($artikel->artikelImagePath) }}" alt="">
-                        </div>
-                        <div class="col">
-                            <h5 class="card-title">{{ $artikel->judulArtikel }}</h5>
-                            <p class="secondary" style="">{{ $artikel->namaPenulisArtikel }} |
-                                {{ \Carbon\Carbon::parse($artikel->tanggalArtikel)->format('d-m-Y') }}</p>
-                            <p class="card-text">{{ Str::limit($artikel->isiArtikel, 120) }}</p>
-                        </div>
-                    </div>
+            @if ($artikels->isEmpty())
+                <div>
+                    There is no Article yet!!!
                 </div>
-            @endforeach
-            {{-- <div class="row gap-4 my-5" style="margin: 0">
-                <div class="col text-end"><img src="{{ asset('img/NewsImage/newsImage1.png') }}" alt=""></div>
-                <div class="col">
-                    <div style="font-size: 40px; font-weight: 600; max-width: 600px;">Tokoh Dunia
-                        Dukung SDGs 2030 Zero Hunger</div>
-                    <div style="font-size: 15px; font-weight: 600">19 Oktober 2015 | Tri Wahyuni
+            @else
+                @foreach ($artikels as $artikel)
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="col">
+                                <img src="{{ asset($artikel->artikelImagePath) }}" alt="">
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title">{{ $artikel->judulArtikel }}</h5>
+                                <p class="secondary" style="">{{ $artikel->namaPenulisArtikel }} |
+                                    {{ \Carbon\Carbon::parse($artikel->tanggalArtikel)->format('d-m-Y') }}</p>
+                                <p class="card-text">{{ Str::limit($artikel->isiArtikel, 120) }}</p>
+                            </div>
+                        </div>
                     </div>
-                    <div style="font-size: 18px; font-weight: 500; max-width: 600px">Forum diskusi
-                        global yang diprakarsai Foreign Policy Community of Indonesia (FPCI) kembali mengundang para tokoh
-                        dunia dan pakar dari berbagai bidang untuk mendiskusikan isu-isu terkini dunia
-                    </div>
-                    <button type="button" class="btn btn-outline-warning border-4"
-                        style="color: black;font-size: 20px; font-weight: 600; padding: 5px 15px 5px 15px">
-                        Find Out More</button>
-                </div>
-            </div> --}}
+                @endforeach
+            @endif
         </div>
     </div>
 @endsection
