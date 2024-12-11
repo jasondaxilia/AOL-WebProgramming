@@ -7,6 +7,12 @@
 
 .amount-option.active,
 .destination-option.active {
-    background-color: #D3A029 !important;
+    background-color: #d3a029 !important;
     color: #fff !important;
+}
+
+#findMore:hover {
+    background-color: #d3a029;
+    color: #fff;
+    margin: 0;
 }
