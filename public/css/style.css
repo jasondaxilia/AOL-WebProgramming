@@ -17,12 +17,6 @@
     color: #fff !important;
 }
 
-#findMore:hover {
-    background-color: #d3a029;
-    color: #fff;
-    margin: 0;
-}
-
 .radio-group {
     display: flex;
     align-items: center;
@@ -58,4 +52,10 @@
 .radio-group input[type="radio"]:checked + label::before {
     background-color: #d3a029;
     border-color: #d3a029;
+}
+
+#findMore:hover {
+    background-color: #d3a029;
+    color: #fff;
+    margin: 0;
 }
