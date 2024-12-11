@@ -101,15 +101,12 @@
 
                     <!-- Destination Options -->
                     <div class="row justify-content-center align-content-center py-4">
-                        <div class="col text-end">
-                            <button class="destination-option btn-primary px-4 py-2"
-                                style="width: 150px ;border-radius: 4px; border-color: #D3A029;border-style: solid">Domestic
-                            </button>
-                        </div>
-                        <div class="col text-start">
-                            <button class="destination-option btn-primary px-4 py-2"
-                                style="width: 150px ;border-radius: 4px; border-color: #D3A029;border-style: solid">International
-                            </button>
+                        <div class="radio-group d-flex gap-3">
+                            <input type="radio" id="domestic" name="donationType" value="Domestic">
+                            <label for="domestic">Domestic</label>
+                    
+                            <input type="radio" id="international" name="donationType" value="International">
+                            <label for="international">International</label>
                         </div>
                     </div>
 
