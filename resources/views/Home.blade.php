@@ -1,3 +1,7 @@
+@php
+    use Illuminate\Support\Str;
+@endphp
+
 @extends('layout')
 
 @section('container')
@@ -137,13 +141,20 @@
         <script src="{{ asset('js/script.js') }}"></script>
 
         {{-- News --}}
-        <div class="d-grid">
+        <div class="class=vstack gap-2 mx-auto my-5" style="width: 50%">
             @foreach ($artikels as $artikel)
                 <div class="card mb-3">
                     <div class="card-body">
                         {{-- udh connect sisa dimasukin datanya sama lengkapin tampilan --}}
-                        <div class=""></div>
-                        <h5 class="card-title">{{ $artikel->judulArtikel }}</h5>
+                        <div class="col">
+                            <img src="{{ asset($artikel->artikelImagePath) }}" alt="">
+                        </div>
+                        <div class="col">
+                            <h5 class="card-title">{{ $artikel->judulArtikel }}</h5>
+                            <p class="secondary" style="">{{ $artikel->namaPenulisArtikel }} |
+                                {{ \Carbon\Carbon::parse($artikel->tanggalArtikel)->format('d-m-Y') }}</p>
+                            <p class="card-text">{{ Str::limit($artikel->isiArtikel, 120) }}</p>
+                        </div>
                     </div>
                 </div>
             @endforeach
