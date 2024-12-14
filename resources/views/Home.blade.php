@@ -42,17 +42,23 @@
             </div>
             <div class="col d-grid align-items-center py-5 gap-3" style="padding: 0; margin-left: 250px">
                 <div class="row" style="padding-left: 75px">
-                    <div style="font-size: 60px;font-weight: 700">1
-                        in 11</div>
+                    <div class="d-flex gap-3" style="font-size: 60px;font-weight: 700">
+                        <div style="color: #D3A029">1</div>
+                        <div>in</div>
+                        <div style="color: #D3A029">11</div>
+                    </div>
                     <div style="font-size: 18px; font-weight: 600">People experience hunger</div>
                 </div>
                 <div class="row" style="padding-left: 75px">
-                    <div style="font-size: 60px;font-weight: 700">733 Million</div>
+                    <div class="d-flex gap-3" style="font-size: 60px;font-weight: 700">
+                        <div style="color: #D3A029">733</div>
+                        <div>Million</div>
+                    </div>
                     <div style="font-size: 18px; font-weight: 600">People Sleep Hungry Each Night
                     </div>
                 </div>
                 <div class="row" style="padding-left: 75px">
-                    <div style="font-size: 60px;font-weight: 700">130,000</div>
+                    <div style="font-size: 60px;font-weight: 700; color: #D3A029">130,000</div>
                     <div style="font-size: 18px; font-weight: 600">People in the Horn of Africa are
                         on
                         <br>
@@ -93,6 +99,7 @@
                                 </button>
                             </div>
                         </div>
+
 
                         <!-- Input Nominal (Tombol Pilihan atau Manual) -->
                         <div class="row justify-content-center">
@@ -144,27 +151,44 @@
         <script src="{{ asset('js/script.js') }}"></script>
 
         {{-- News --}}
-        <div class="class=vstack gap-2 mx-auto my-5" style="width: 50%">
-            @if ($artikels->isEmpty())
-                <div>
-                    There is no Article yet!!!
-                </div>
-            @else
-                @foreach ($artikels as $artikel)
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="col">
-                                <img src="{{ asset($artikel->artikelImagePath) }}" alt="">
-                            </div>
-                            <div class="col">
-                                <h5 class="card-title">{{ $artikel->judulArtikel }}</h5>
-                                <p class="secondary" style="">{{ $artikel->namaPenulisArtikel }} |
-                                    {{ \Carbon\Carbon::parse($artikel->tanggalArtikel)->format('d-m-Y') }}</p>
-                                <p class="card-text">{{ Str::limit($artikel->isiArtikel, 120) }}</p>
+        <div class="mx-auto my-5" style="width: 50%">
+            <div class="d-grid gap-3">
+                @if ($artikels->isEmpty())
+                    <div class="d-flex justify-content-center h1 ">
+                        There is no Article yet!!!
+                    </div>
+                @else
+                    @foreach ($artikels as $artikel)
+                        <div class="card ">
+                            <div class="card-body d-flex gap-3">
+                                <div class="col">
+                                    <img src="{{ asset('img/NewsImage/' . $artikel->artikelImagePath) }}" alt=""
+                                        width="450px">
+                                </div>
+                                <div class="col">
+                                    <div class="col">
+                                        <div class="card-title h5" style="font-weight: 700">{{ $artikel->judulArtikel }}
+                                        </div>
+                                        <div class="" style="font-size: 10px; font-weight: 600; color:#696969">
+                                            {{ $artikel->namaPenulisArtikel }} |
+                                            {{ \Carbon\Carbon::parse($artikel->tanggalArtikel)->format('d-m-Y') }}
+                                        </div>
+                                        <div class="card-text" style="font-weight: 500">
+                                            {{ Str::limit($artikel->isiArtikel, 200) }}</div>
+                                    </div>
+                                    <div class="col ">
+                                        <button id="findMore" type="button" class="btn mt-2"
+                                            style="border: 4px solid #D3A029 ; font-weight: 700">Find
+                                            More</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
+            </div>
+            <div class="mt-2">
+                {{ $artikels->links('pagination::bootstrap-5') }}
+            </div>
             @endif
         </div>
     </div>
