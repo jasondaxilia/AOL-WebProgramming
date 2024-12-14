@@ -68,15 +68,9 @@
                                 width="50px"></a>
                     </div>
                 </div>
-                <div class="mx-auto d-flex justify-content-center">
+                <div class="mx-auto d-flex justify-content-center" style="color: white">
                     © 2024 ZeroHunger. All Rights Reserved.
-
                 </div>
-                {{-- <div class="col">
-                    <div class="col">asd</div>
-                    <div class="col">asd</div>
-                    <div class="col">asd</div>
-                </div> --}}
             </div>
         </div>
     </footer>

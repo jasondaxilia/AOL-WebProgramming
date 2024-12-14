@@ -42,17 +42,23 @@
             </div>
             <div class="col d-grid align-items-center py-5 gap-3" style="padding: 0; margin-left: 250px">
                 <div class="row" style="padding-left: 75px">
-                    <div style="font-size: 60px;font-weight: 700">1
-                        in 11</div>
+                    <div class="d-flex gap-3" style="font-size: 60px;font-weight: 700">
+                        <div style="color: #D3A029">1</div>
+                        <div>in</div>
+                        <div style="color: #D3A029">11</div>
+                    </div>
                     <div style="font-size: 18px; font-weight: 600">People experience hunger</div>
                 </div>
                 <div class="row" style="padding-left: 75px">
-                    <div style="font-size: 60px;font-weight: 700">733 Million</div>
+                    <div class="d-flex gap-3" style="font-size: 60px;font-weight: 700">
+                        <div style="color: #D3A029">733</div>
+                        <div>Million</div>
+                    </div>
                     <div style="font-size: 18px; font-weight: 600">People Sleep Hungry Each Night
                     </div>
                 </div>
                 <div class="row" style="padding-left: 75px">
-                    <div style="font-size: 60px;font-weight: 700">130,000</div>
+                    <div style="font-size: 60px;font-weight: 700; color: #D3A029">130,000</div>
                     <div style="font-size: 18px; font-weight: 600">People in the Horn of Africa are
                         on
                         <br>
@@ -104,7 +110,7 @@
                         <div class="radio-group d-flex gap-3">
                             <input type="radio" id="domestic" name="donationType" value="Domestic">
                             <label for="domestic">Domestic</label>
-                    
+
                             <input type="radio" id="international" name="donationType" value="International">
                             <label for="international">International</label>
                         </div>
@@ -138,98 +144,44 @@
         <script src="{{ asset('js/script.js') }}"></script>
 
         {{-- News --}}
-        <div class="class=vstack gap-2 mx-auto mt-5" style="width: 50%">
-            @if ($artikels->isEmpty())
-                <div>
-                    There is no Article yet!!!
-                </div>
-            @else
-                @foreach ($artikels as $artikel)
-                    <div class="card mb-4">
-                        <div class="card-body d-flex gap-3">
-                            <div class="col">
-                                <img src="{{ asset('img/NewsImage/' . $artikel->artikelImagePath) }}" alt=""
-                                    width="450px">
-                            </div>
-                            <div class="col">
+        <div class="mx-auto my-5" style="width: 50%">
+            <div class="d-grid gap-3">
+                @if ($artikels->isEmpty())
+                    <div class="d-flex justify-content-center h1 ">
+                        There is no Article yet!!!
+                    </div>
+                @else
+                    @foreach ($artikels as $artikel)
+                        <div class="card ">
+                            <div class="card-body d-flex gap-3">
                                 <div class="col">
-                                    <div class="card-title h5" style="font-weight: 700">{{ $artikel->judulArtikel }}</div>
-                                    <div class="" style="font-size: 10px; font-weight: 600; color:#696969">
-                                        {{ $artikel->namaPenulisArtikel }} |
-                                        {{ \Carbon\Carbon::parse($artikel->tanggalArtikel)->format('d-m-Y') }}
-                                    </div>
-                                    <div class="card-text" style="font-weight: 500">
-                                        {{ Str::limit($artikel->isiArtikel, 200) }}</div>
+                                    <img src="{{ asset('img/NewsImage/' . $artikel->artikelImagePath) }}" alt=""
+                                        width="450px">
                                 </div>
-                                <div class="col ">
-                                    <button id="findMore" type="button" class="btn mt-2"
-                                        style="border: 4px solid #D3A029 ; font-weight: 700">Find
-                                        More</button>
+                                <div class="col">
+                                    <div class="col">
+                                        <div class="card-title h5" style="font-weight: 700">{{ $artikel->judulArtikel }}
+                                        </div>
+                                        <div class="" style="font-size: 10px; font-weight: 600; color:#696969">
+                                            {{ $artikel->namaPenulisArtikel }} |
+                                            {{ \Carbon\Carbon::parse($artikel->tanggalArtikel)->format('d-m-Y') }}
+                                        </div>
+                                        <div class="card-text" style="font-weight: 500">
+                                            {{ Str::limit($artikel->isiArtikel, 200) }}</div>
+                                    </div>
+                                    <div class="col ">
+                                        <button id="findMore" type="button" class="btn mt-2"
+                                            style="border: 4px solid #D3A029 ; font-weight: 700">Find
+                                            More</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                @endforeach
-                {{-- <div class="mt-4">
-                    {{ $artikels->links() }}
-                </div> --}}
-
-                {{-- <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav> --}}
-
-                @if ($artikels->hasPages())
-                    <nav>
-                        <ul class="pagination">
-                            {{-- Previous Page Link --}}
-                            @if ($artikels->onFirstPage())
-                                <li class="disabled"><span>&laquo;</span></li>
-                            @else
-                                <li><a href="{{ $artikels->previousPageUrl() }}" rel="prev">&laquo;</a></li>
-                            @endif
-
-                            {{-- Pagination Elements --}}
-                            @foreach ($artikels as $element)
-                                {{-- "Three Dots" Separator --}}
-                                @if (is_string($element))
-                                    <li class="disabled"><span>{{ $element }}</span></li>
-                                @endif
-
-                                {{-- Array Of Links --}}
-                                @if (is_array($artikels))
-                                    @foreach ($artikels as $page => $url)
-                                        @if ($page == $artikels->currentPage())
-                                            <li class="active"><span>{{ $page }}</span></li>
-                                        @else
-                                            <li><a href="{{ $url }}">{{ $page }}</a></li>
-                                        @endif
-                                    @endforeach
-                                @endif
-                            @endforeach
-
-                            {{-- Next Page Link --}}
-                            @if ($artikels->hasMorePages())
-                                <li><a href="{{ $artikels->nextPageUrl() }}" rel="next">&raquo;</a></li>
-                            @else
-                                <li class="disabled"><span>&raquo;</span></li>
-                            @endif
-                        </ul>
-                    </nav>
-                @endif
+                    @endforeach
+            </div>
+            <div class="mt-2">
+                {{ $artikels->links('pagination::bootstrap-5') }}
+            </div>
             @endif
         </div>
     </div>
