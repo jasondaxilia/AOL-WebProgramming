@@ -66,63 +66,69 @@
         <div class="row py-0 mx-0 justify-content-center" style="background-color: #D3A029; width: 100%; margin: 0;">
             <div class="col col-md-3 m-5 py-5" style="border-radius: 15px; background-color: white">
                 <div class="d-grid text-end">
-                    <!-- Nominal Options -->
-                    <div class="row justify-content-center align-content-center pb-4">
-                        <div class="col text-end">
-                            <button class="amount-option btn-primary px-4 py-2"
-                                style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp10.000
-                            </button>
-                        </div>
-                        <div class="col text-start">
-                            <button class="amount-option btn-primary px-4 py-2"
+                    <form action="{{ route('donasi.store') }}" method="POST">
+                        @csrf
+                        <!-- Nominal Options -->
+                        <div class="row justify-content-center align-content-center pb-4">
+                            <div class="col text-end">
+                                <button type="button" class="amount-option px-4 py-2" data-donasi="10000" onclick="selectButton(this)"
+                                    style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp10.000
+                                </button>
+                            </div>
+                            <div class="col text-start">
+                                <button type="button" class="amount-option px-4 py-2" data-donasi="25000" onclick="selectButton(this)"
                                 style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp25.000
-                            </button>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row justify-content-center align-content-center pb-4">
-                        <div class="col text-end">
-                            <button class="amount-option btn-primary px-4 py-2"
+                        <div class="row justify-content-center align-content-center pb-4">
+                            <div class="col text-end">
+                                <button type="button" class="amount-option px-4 py-2" data-donasi="50000" onclick="selectButton(this)"
                                 style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp50.000
-                            </button>
-                        </div>
-                        <div class="col text-start">
-                            <button class="amount-option btn-primary px-4 py-2"
+                                </button>
+                            </div>
+                            <div class="col text-start">
+                                <button type="button" class="amount-option px-4 py-2" data-donasi="100000" onclick="selectButton(this)"
                                 style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp100.000
-                            </button>
+                                </button>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Input Nominal -->
-                    <div class="row justify-content-center">
-                        <input class="justify-content-center text-center"
-                            style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid"
-                            type="text" placeholder="Rp0,00">
-                    </div>
-
-                    <!-- Destination Options -->
-                    <div class="row justify-content-center align-content-center py-4">
-                        <div class="radio-group d-flex gap-3">
-                            <input type="radio" id="domestic" name="donationType" value="Domestic">
-                            <label for="domestic">Domestic</label>
-                    
-                            <input type="radio" id="international" name="donationType" value="International">
-                            <label for="international">International</label>
+                        <!-- Input Nominal (Tombol Pilihan atau Manual) -->
+                        <div class="row justify-content-center">
+                            <input id="manualdonasi" class="justify-content-center text-center"
+                                style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid"
+                                type="number" name="manualdonasi" placeholder="Rp0,00" oninput="manualInput()" />
                         </div>
-                    </div>
 
-                    <!-- Input Name -->
-                    <div class="row justify-content-center">
-                        <input class="justify-content-center text-center"
-                            style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid"
-                            type="text" placeholder="Name">
-                    </div>
+                        <!-- Input Hidden untuk Menyimpan Nilai Donasi -->
+                        <input type="hidden" name="totaldonasis" id="totaldonasis">
 
-                    <!-- Donate Button -->
-                    <div class="text-center pt-3">
-                        <button class="button px-5 py-2"
-                            style="color: white; background-color: #D3A029; border-radius: 10px">Donate Now</button>
-                        <div style="font-size: 10px">100% of your donation goes to help those in need</div>
-                    </div>
+                        <!-- Destination Options -->
+                        <div class="row justify-content-center align-content-center py-4">
+                            <div class="radio-group d-flex gap-3">
+                                <input type="radio" id="domestic" name="tipedonasis" value="Domestic" required>
+                                <label for="domestic">Domestic</label>
+
+                                <input type="radio" id="international" name="tipedonasis" value="International" required>
+                                <label for="international">International</label>
+                            </div>
+                        </div>
+
+                        <!-- Input Name -->
+                        <div class="row justify-content-center">
+                            <input class="justify-content-center text-center"
+                                style="width: 327px; height: 40px; border-radius: 4px; border-color: #D3A029;border-style: solid"
+                                type="text" name="nama" placeholder="Name" required>
+                        </div>
+
+                        <!-- Donate Button -->
+                        <div class="text-center pt-3">
+                            <button type="submit" class="button px-5 py-2"
+                                style="color: white; background-color: #D3A029; border-radius: 10px">Donate Now</button>
+                            <div style="font-size: 10px">100% of your donation goes to help those in need</div>
+                        </div>
+                    </form> 
                 </div>
             </div>
             <div class="col d-flex justify-content-end align-items-center py-5 text-end"
