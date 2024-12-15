@@ -14,23 +14,27 @@
             <img src="{{ asset('img/image1.png') }}" alt="" class=""
                 style="margin: 0;padding:0 ; position: relative;">
             <div class=""
-                style="color: white;position: absolute; font-size:60px;font-weight: 900; padding:250px 0px 0px 100px">
+                style="color: white;position: absolute; font-size:75px;font-weight: 900; padding:310px 0px 0px 100px">
                 A World
             </div>
             <div class=""
-                style="color: white;position: absolute; font-size:60px;font-weight: 900; padding:320px 0px 0px 100px">
+                style="color: white;position: absolute; font-size:75px;font-weight: 900; padding:390px 0px 0px 100px">
                 Without Hunger
             </div>
-            <div style="color: white;position: absolute; font-size:20px; font-weight: 400; padding:405px 0px 0px 100px; ">
-                A world without hunger is one where everyone has reliable access
+            <div style="color: white;position: absolute; font-size:35px; font-weight: 500; padding:510px 0px 0px 100px; ">
+                A world without hunger envisions a future where every person
                 <br>
-                to nutritious and sufficient food, free
-                from food insecurity and malnutrition.
+                has access to sufficient safe, and nutritious food to lead a healthy
+                <br>
+                and active life. It involves eliminating food insecurity,
+                <br>
+                addressing malnutrition, and creating sustainable food systems
+                <br>
+                that prioritize equity, resilience, and environmental stewardship. 
                 <br>
                 It envisions sustainable and equitable food systems that prioritize
-                the well-being of all people,
                 <br>
-                ensuring no one goes hungry while protecting the environment
+                the well-being of all people, ensuring no one goes hungry while protecting the environment
             </div>
         </div>
 
