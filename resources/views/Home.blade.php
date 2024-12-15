@@ -5,6 +5,9 @@
 @extends('layout')
 
 @section('container')
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <script src="{{ asset('js/script.js') }}"></script>
+
     <div class="d-grid" style="margin: 0px;padding: 0px">
         {{-- HeroImage --}}
         <div class="row" style="margin: 0 ; overflow: hidden">
@@ -77,25 +80,29 @@
                         <!-- Nominal Options -->
                         <div class="row justify-content-center align-content-center pb-4">
                             <div class="col text-end">
-                                <button type="button" class="amount-option px-4 py-2" data-donasi="10000" onclick="selectButton(this)"
+                                <button type="button" class="amount-option px-4 py-2" data-donasi="10000"
+                                    onclick="selectButton(this)"
                                     style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp10.000
                                 </button>
                             </div>
                             <div class="col text-start">
-                                <button type="button" class="amount-option px-4 py-2" data-donasi="25000" onclick="selectButton(this)"
-                                style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp25.000
+                                <button type="button" class="amount-option px-4 py-2" data-donasi="25000"
+                                    onclick="selectButton(this)"
+                                    style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp25.000
                                 </button>
                             </div>
                         </div>
                         <div class="row justify-content-center align-content-center pb-4">
                             <div class="col text-end">
-                                <button type="button" class="amount-option px-4 py-2" data-donasi="50000" onclick="selectButton(this)"
-                                style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp50.000
+                                <button type="button" class="amount-option px-4 py-2" data-donasi="50000"
+                                    onclick="selectButton(this)"
+                                    style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp50.000
                                 </button>
                             </div>
                             <div class="col text-start">
-                                <button type="button" class="amount-option px-4 py-2" data-donasi="100000" onclick="selectButton(this)"
-                                style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp100.000
+                                <button type="button" class="amount-option px-4 py-2" data-donasi="100000"
+                                    onclick="selectButton(this)"
+                                    style="width: 150px; border-radius: 4px; border-color: #D3A029; border-style: solid">Rp100.000
                                 </button>
                             </div>
                         </div>
@@ -135,7 +142,7 @@
                                 style="color: white; background-color: #D3A029; border-radius: 10px">Donate Now</button>
                             <div style="font-size: 10px">100% of your donation goes to help those in need</div>
                         </div>
-                    </form> 
+                    </form>
                 </div>
             </div>
             <div class="col d-flex justify-content-end align-items-center py-5 text-end"
@@ -144,14 +151,37 @@
             </div>
         </div>
 
-        <!-- ganti warna option -->
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        {{-- Total Donation --}}
+        <div class="" style="background-color: #D3A029">
+            <div class="container">
+                <div class="row justify-content-center h1" style="font-weight: 800">
+                    TOTAL DONATION
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row justify-content-center h3" style="font-weight: 700">
+                            Domestic
+                        </div>
+                        <div>
+                            @foreach ($totalDonation as $total)
+                                {{ $total->tipedonasis }}
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row justify-content-center h3" style="font-weight: 700">
+                            International
+                        </div>
+                        <div>
 
-        <!-- jsnya -->
-        <script src="{{ asset('js/script.js') }}"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         {{-- News --}}
-        <div class="mx-auto my-5" style="width: 50%">
+        {{-- <div class="mx-auto my-5" style="width: 50%">
             <div class="d-grid gap-3">
                 @if ($artikels->isEmpty())
                     <div class="d-flex justify-content-center h1 ">
@@ -190,6 +220,6 @@
                 {{ $artikels->links('pagination::bootstrap-5') }}
             </div>
             @endif
-        </div>
+        </div> --}}
     </div>
 @endsection

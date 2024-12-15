@@ -15,7 +15,7 @@ class DonasiController extends Controller
             'totaldonasis' => 'required|integer|min:1',
             'tipedonasis' => 'required|string|in:Domestic,International',
         ]);
-        
+
         $totaldonasis = $request->manualdonasi ? $request->manualdonasi : $request->totaldonasis;
 
         // Simpan data ke database
@@ -26,5 +26,12 @@ class DonasiController extends Controller
         ]);
 
         return redirect()->back()->with('success', 'Donasi berhasil disimpan!');
+    }
+
+    public function getTotalDonation()
+    {
+        $totalDonation = Donasi::selectRaw('tipedonasis,SUM(totaldonasis) as total_ammount')->groupBy('tipedonasis')->get();
+
+        return view('Home', compact('totalDonation'));
     }
 }
