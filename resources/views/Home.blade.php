@@ -156,11 +156,8 @@
         </div>
 
         {{-- Total Donation --}}
-<<<<<<< HEAD
         {{-- <div class="" style="background-color: #D3A029">
-=======
         <div class="" style="background-color: #D3A029; color: white">
->>>>>>> 66e79a9e5fe177683296c013f8fc595393e85492
             <div class="container">
                 <div class="row justify-content-center" style="font-size: 50px; font-weight: 800; margin-top: 75px; margin-bottom: 50px">
                     TOTAL DONATION
@@ -187,50 +184,48 @@
         </div> --}}
 
         {{-- News --}}
-<<<<<<< HEAD
-        <div id="news" class="mx-auto my-5" style="width: 50%">
-            <div class="h1" style="font-weight: 700">Article</div>
-=======
-        <div class="mx-auto my-5" style="width: 50%">
->>>>>>> 66e79a9e5fe177683296c013f8fc595393e85492
-            <div class="d-grid gap-3">
-                @if ($artikels->isEmpty())
-                    <div class="d-flex justify-content-center h1 ">
-                        There is no Article yet!!!
-                    </div>
-                @else
-                    @foreach ($artikels as $artikel)
-                        <div class="card ">
-                            <div class="card-body d-flex gap-3">
-                                <div class="col">
-                                    <img src="{{ asset('img/NewsImage/' . $artikel->artikelImagePath) }}" alt=""
-                                        width="450px">
-                                </div>
-                                <div class="col">
+        <div id="news" class="mx-auto my-5">
+            <div class="h1 text-center" style="font-weight: 700">Article</div>
+            <div class="mx-auto mb-5" style="width: 50%">
+                <div class="d-grid gap-3">
+                    @if ($artikels->isEmpty())
+                        <div class="d-flex justify-content-center h1 ">
+                            There is no Article yet!!!
+                        </div>
+                    @else
+                        @foreach ($artikels as $artikel)
+                            <div class="card ">
+                                <div class="card-body d-flex gap-3">
                                     <div class="col">
-                                        <div class="card-title h5" style="font-weight: 700">{{ $artikel->judulArtikel }}
-                                        </div>
-                                        <div class="" style="font-size: 10px; font-weight: 600; color:#696969">
-                                            {{ $artikel->namaPenulisArtikel }} |
-                                            {{ \Carbon\Carbon::parse($artikel->tanggalArtikel)->format('d-m-Y') }}
-                                        </div>
-                                        <div class="card-text" style="font-weight: 500">
-                                            {{ Str::limit($artikel->isiArtikel, 200) }}</div>
+                                        <img src="{{ asset('img/NewsImage/' . $artikel->artikelImagePath) }}"
+                                            alt="" width="450px">
                                     </div>
-                                    <div class="col ">
-                                        <button id="findMore" type="button" class="btn mt-2"
-                                            style="border: 4px solid #D3A029 ; font-weight: 700">Find
-                                            More</button>
+                                    <div class="col">
+                                        <div class="col">
+                                            <div class="card-title h5" style="font-weight: 700">
+                                                {{ $artikel->judulArtikel }}
+                                            </div>
+                                            <div class="" style="font-size: 10px; font-weight: 600; color:#696969">
+                                                {{ $artikel->namaPenulisArtikel }} |
+                                                {{ \Carbon\Carbon::parse($artikel->tanggalArtikel)->format('d-m-Y') }}
+                                            </div>
+                                            <div class="card-text" style="font-weight: 500">
+                                                {{ Str::limit($artikel->isiArtikel, 200) }}</div>
+                                        </div>
+                                        <div class="col ">
+                                            <button id="findMore" type="button" class="btn mt-2"
+                                                style="border: 4px solid #D3A029 ; font-weight: 700">Find
+                                                More</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                </div>
+                <div class="mt-2">
+                    {{ $artikels->links('pagination::bootstrap-5') }}
+                </div>
+                @endif
             </div>
-            <div class="mt-2">
-                {{ $artikels->links('pagination::bootstrap-5') }}
-            </div>
-            @endif
         </div>
-    </div>
-@endsection
+    @endsection
