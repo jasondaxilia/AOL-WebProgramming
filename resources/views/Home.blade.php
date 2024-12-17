@@ -66,7 +66,7 @@
                 </div>
                 <div class="row" style="padding-left: 75px">
                     <div style="font-size: 60px;font-weight: 700; color: #D3A029">130,000</div>
-                    <div style="font-size: 18px; font-weight: 600">People in the Horn of Africa are
+                    <div id="donate" style="font-size: 18px; font-weight: 600">People in the Horn of Africa are
                         on
                         <br>
                         the brink of death from starvation

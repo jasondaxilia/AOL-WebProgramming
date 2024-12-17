@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark border-bottom mx-5 p-0 ">
+    <nav class="navbar navbar-expand-lg border-bottom">
         <div class="navbar container-fluid full-width fixed-top py-2 px-5" style="background-color: white">
             <a class="navbar-brand " href="#">
                 <img src="{{ asset('img/Logo.png') }}" alt="LogoZeroHunger" width="200px">
@@ -40,7 +40,7 @@
                         Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Donate!</a>
+                    <a class="nav-link " href="#donate">Donate!</a>
                 </li>
             </ul>
         </div>
