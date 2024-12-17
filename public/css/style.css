@@ -66,3 +66,15 @@
 .page-link.active {
     background-color: #d3a029;
 }
+
+.nav-link {
+    font-weight: 700;
+    color: #d3a029;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #d3a029;
+    border-radius: 10px;
+}

@@ -23,24 +23,24 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark border-bottom mx-5 p-0 sticky-top full-width">
-        <div class="navbar container-fluid" style="background-color: white; width: 100%">
+    <nav class="navbar navbar-expand-lg navbar-dark border-bottom mx-5 p-0 ">
+        <div class="navbar container-fluid full-width fixed-top py-2 px-5" style="background-color: white">
             <a class="navbar-brand " href="#">
                 <img src="{{ asset('img/Logo.png') }}" alt="LogoZeroHunger" width="200px">
             </a>
             <ul class="navbar-nav h3 gap-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="/" style="color:#D3A029; font-weight: 700">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#news" style="color:#D3A029; font-weight: 700">News</a>
+                    <a class="nav-link" href="#news">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:#D3A029; font-weight: 700">About
+                    <a class="nav-link" href="#">About
                         Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#" style="color:#D3A029; font-weight: 700">Donate!</a>
+                    <a class="nav-link " href="#">Donate!</a>
                 </li>
             </ul>
         </div>
