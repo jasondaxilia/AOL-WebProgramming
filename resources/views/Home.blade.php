@@ -30,7 +30,7 @@
                 <br>
                 addressing malnutrition, and creating sustainable food systems
                 <br>
-                that prioritize equity, resilience, and environmental stewardship. 
+                that prioritize equity, resilience, and environmental stewardship.
                 <br>
                 It envisions sustainable and equitable food systems that prioritize
                 <br>
@@ -156,7 +156,7 @@
         </div>
 
         {{-- Total Donation --}}
-        <div class="" style="background-color: #D3A029">
+        {{-- <div class="" style="background-color: #D3A029">
             <div class="container">
                 <div class="row justify-content-center h1" style="font-weight: 800">
                     TOTAL DONATION
@@ -182,10 +182,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         {{-- News --}}
-        {{-- <div class="mx-auto my-5" style="width: 50%">
+        <div id="news" class="mx-auto my-5" style="width: 50%">
+            <div class="h1" style="font-weight: 700">Article</div>
             <div class="d-grid gap-3">
                 @if ($artikels->isEmpty())
                     <div class="d-flex justify-content-center h1 ">
@@ -224,6 +225,6 @@
                 {{ $artikels->links('pagination::bootstrap-5') }}
             </div>
             @endif
-        </div> --}}
+        </div>
     </div>
 @endsection

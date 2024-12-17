@@ -23,17 +23,17 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark border-bottom mx-5 p-0">
-        <div class="navbar container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark border-bottom mx-5 p-0 sticky-top full-width">
+        <div class="navbar container-fluid" style="background-color: white; width: 100%">
             <a class="navbar-brand " href="#">
                 <img src="{{ asset('img/Logo.png') }}" alt="LogoZeroHunger" width="200px">
             </a>
             <ul class="navbar-nav h3 gap-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:#D3A029; font-weight: 700">Home</a>
+                    <a class="nav-link" href="/" style="color:#D3A029; font-weight: 700">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:#D3A029; font-weight: 700">News</a>
+                    <a class="nav-link" href="#news" style="color:#D3A029; font-weight: 700">News</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" style="color:#D3A029; font-weight: 700">About
@@ -58,14 +58,14 @@
                         <img src="{{ asset('img/LogoPutih.png') }}" alt="" width="250px">
                     </div>
                     <div class="icon-container mt-1 d-flex justify-content-center">
-                        <a href="" class="icon"><img src="{{ asset('img/facebookLogo.png') }}" alt=""
-                                width="50px"></a>
-                        <a href="" class="icon"><img src="{{ asset('img/twitterLogo.png') }}" alt=""
-                                width="50px"></a>
-                        <a href="" class="icon"><img src="{{ asset('img/instagramLogo.png') }}" alt=""
-                                width="50px"></a>
-                        <a href="" class="icon"><img src="{{ asset('img/youtubeLogo.png') }}" alt=""
-                                width="50px"></a>
+                        <a href="https://www.facebook.com/" class="icon"><img
+                                src="{{ asset('img/facebookLogo.png') }}" alt="" width="50px"></a>
+                        <a href="https://www.x.com/" class="icon"><img src="{{ asset('img/twitterLogo.png') }}"
+                                alt="" width="50px"></a>
+                        <a href="https://www.instagram.com/" class="icon"><img
+                                src="{{ asset('img/instagramLogo.png') }}" alt="" width="50px"></a>
+                        <a href="https://www.youtube.com/" class="icon"><img src="{{ asset('img/youtubeLogo.png') }}"
+                                alt="" width="50px"></a>
                     </div>
                 </div>
                 <div class="mx-auto d-flex justify-content-center" style="color: white">
