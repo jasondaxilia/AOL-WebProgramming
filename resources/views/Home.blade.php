@@ -156,28 +156,30 @@
         </div>
 
         {{-- Total Donation --}}
+<<<<<<< HEAD
         {{-- <div class="" style="background-color: #D3A029">
+=======
+        <div class="" style="background-color: #D3A029; color: white">
+>>>>>>> 66e79a9e5fe177683296c013f8fc595393e85492
             <div class="container">
-                <div class="row justify-content-center h1" style="font-weight: 800">
+                <div class="row justify-content-center" style="font-size: 50px; font-weight: 800; margin-top: 75px; margin-bottom: 50px">
                     TOTAL DONATION
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="row justify-content-center h3" style="font-weight: 700">
-                            Domestic
+                        <div class="row justify-content-center" style="font-size: 60px; font-weight: 700; margin-bottom: 10px">
+                            Rp{{ number_format($totalDomestic, 0, ',', '.') }}
                         </div>
-                        <div>
-                            @foreach ($totalDonation as $total)
-                                {{ $total->tipedonasis }}
-                            @endforeach
+                        <div class="row justify-content-center" style="font-size: 35px; font-weight: 700">
+                            Domestic
                         </div>
                     </div>
                     <div class="col">
-                        <div class="row justify-content-center h3" style="font-weight: 700">
-                            International
+                        <div class="row justify-content-center" style="font-size: 60px; font-weight: 700; margin-bottom: 10px">
+                            Rp{{ number_format($totalInternational, 0, ',', '.') }}
                         </div>
-                        <div>
-
+                        <div class="row justify-content-center" style="font-size: 35px; font-weight: 700">
+                            International
                         </div>
                     </div>
                 </div>
@@ -185,8 +187,12 @@
         </div> --}}
 
         {{-- News --}}
+<<<<<<< HEAD
         <div id="news" class="mx-auto my-5" style="width: 50%">
             <div class="h1" style="font-weight: 700">Article</div>
+=======
+        <div class="mx-auto my-5" style="width: 50%">
+>>>>>>> 66e79a9e5fe177683296c013f8fc595393e85492
             <div class="d-grid gap-3">
                 @if ($artikels->isEmpty())
                     <div class="d-flex justify-content-center h1 ">
