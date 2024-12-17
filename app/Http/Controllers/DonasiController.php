@@ -30,8 +30,10 @@ class DonasiController extends Controller
 
     public function getTotalDonation()
     {
+        $totalDomestic = Donasi::where('tipedonasis', 'Domestic')->sum('totaldonasis');
+        $totalInternational = Donasi::where('tipedonasis', 'International')->sum('totaldonasis');
         $totalDonation = Donasi::selectRaw('tipedonasis,SUM(totaldonasis) as total_ammount')->groupBy('tipedonasis')->get();
 
-        return view('Home', compact('totalDonation'));
+        return view('Home', compact('totalDonation', 'totalDomestic', 'totalInternational'));
     }
 }
