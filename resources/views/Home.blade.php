@@ -235,15 +235,13 @@
         </div>
 
         {{-- About Us --}}
-        <div class="d-grid">
-            <div class="row" style="overflow: hidden; position: relative;">
-                <img src="{{ asset('img/BG.png') }}" alt=""
-                    style=" width: 100%; height: auto;">
-                <div style="position: absolute; top: 20%; left: 35%;">
+        <div class="row" style="margin: 0px; overflow: hidden">
+            <img src="{{ asset('img/BG.png') }}" alt="" width="100%" style="padding: 0 ;position: relative">
+            <div class="d-grid justify-content-center gap-3" style="margin-top: 300px ;position: absolute">
+                <div class="row justify-content-center">
                     <img src="{{ asset('img/Smile.png') }}" alt="" style="width: 750px; height: auto;">
                 </div>
-                <div
-                    style="color: white;position: absolute; font-size:25px; font-weight: 500; padding: 850px 0px 0px 0px; text-align:center ">
+                <div class="row text-center" style="color: #ffffff;font-size:25px; font-weight: 500; text-align:center ">
                     Zero Hunger is a platform dedicated to eradicating global hunger
                     <br>
                     in line with SDG 2: Zero Hunger. Our team of activists,
@@ -252,34 +250,32 @@
                     <br>
                     food practices to ensure universal access to nutritious food.
                 </div>
+            </div>
 
-                <div class="col d-grid align-items-center py-5 gap-3" style="padding: 0; margin-left: 450px">
-                    <div class="container row" style="padding-left: 75px">
-                        <div class="row d-flex gap-3" style="width: 750px; font-size: 85px;font-weight: 800">
-                            Our Vision
-                        </div>
-                        <div class="row" style="padding-left: 100px; font-size: 25px; font-weight: 600">
-                            1. Raise Awareness <br>
-                            2. Provide Support <br>
-                            3. Empower Change
-                        </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="row justify-content-center"
+                        style="font-size: 60px; font-weight: 700; margin-bottom: 10px">
+                        Our Vision
+                    </div>
+                    <div class="row justify-content-center" style="font-size: 35px; font-weight: 700">
+                        1. Raise Awareness <br>
+                        2. Provide Support <br>
+                        3. Empower Change
                     </div>
                 </div>
-
-                <div class="col d-grid align-items-center py-5 gap-3" style="padding: 0; margin-left: 450px">
-                    <div class="container row" style="padding-right: 150px">
-                        <div class="row d-flex gap-3" style="width: 750px; font-size: 85px;font-weight: 800">
-                            Our Mission
-                        </div>
-                        <div class="row" style="padding-left: 50px; font-size: 25px; font-weight: 600">
-                            1. Every child sleeps well-fed. <br>
-                            2. Families access and grow nutritious food. <br>
-                            3. Sustainable food systems leave no one behind.
-                        </div>
+                <div class="col">
+                    <div class="row justify-content-center"
+                        style="font-size: 60px; font-weight: 700; margin-bottom: 10px">
+                        Our Mission
+                    </div>
+                    <div class="row justify-content-center" style="font-size: 35px; font-weight: 700">
+                        1. Every child sleeps well-fed. <br>
+                        2. Families access and grow nutritious food. <br>
+                        3. Sustainable food systems leave no one behind.
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 @endsection
