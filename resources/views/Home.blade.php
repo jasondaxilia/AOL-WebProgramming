@@ -235,10 +235,10 @@
         </div>
 
         {{-- About Us --}}
-        <div class="row">
-            <div class="row" style="margin: 0; overflow: hidden; position: relative;">
+        <div class="d-grid">
+            <div class="row" style="overflow: hidden; position: relative;">
                 <img src="{{ asset('img/BG.png') }}" alt=""
-                    style="margin: 0; padding: 0; width: 100%; height: auto;">
+                    style=" width: 100%; height: auto;">
                 <div style="position: absolute; top: 20%; left: 35%;">
                     <img src="{{ asset('img/Smile.png') }}" alt="" style="width: 750px; height: auto;">
                 </div>
@@ -253,12 +253,25 @@
                     food practices to ensure universal access to nutritious food.
                 </div>
 
-                <div class="col d-grid align-items-center py-5 gap-3" style="padding: 0; margin-left: 250px">
-                    <div class="row" style="padding-left: 75px">
+                <div class="col d-grid align-items-center py-5 gap-3" style="padding: 0; margin-left: 450px">
+                    <div class="container row" style="padding-left: 75px">
+                        <div class="row d-flex gap-3" style="width: 750px; font-size: 85px;font-weight: 800">
+                            Our Vision
+                        </div>
+                        <div class="row" style="padding-left: 100px; font-size: 25px; font-weight: 600">
+                            1. Raise Awareness <br>
+                            2. Provide Support <br>
+                            3. Empower Change
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-grid align-items-center py-5 gap-3" style="padding: 0; margin-left: 450px">
+                    <div class="container row" style="padding-right: 150px">
                         <div class="row d-flex gap-3" style="width: 750px; font-size: 85px;font-weight: 800">
                             Our Mission
                         </div>
-                        <div class="row" style="font-size: 30px; font-weight: 600">
+                        <div class="row" style="padding-left: 50px; font-size: 25px; font-weight: 600">
                             1. Every child sleeps well-fed. <br>
                             2. Families access and grow nutritious food. <br>
                             3. Sustainable food systems leave no one behind.
