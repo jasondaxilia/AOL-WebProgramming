@@ -21,7 +21,7 @@
                 style="color: white;position: absolute; font-size:75px;font-weight: 900; padding:390px 0px 0px 100px">
                 Without Hunger
             </div>
-            <div style="color: white;position: absolute; font-size:35px; font-weight: 500; padding:510px 0px 0px 100px; ">
+            <div style="color: white;position: absolute; font-size:25px; font-weight: 500; padding:510px 0px 0px 100px; ">
                 A world without hunger envisions a future where every person
                 <br>
                 has access to sufficient safe, and nutritious food to lead a healthy
@@ -66,7 +66,7 @@
                 </div>
                 <div class="row" style="padding-left: 75px">
                     <div style="font-size: 60px;font-weight: 700; color: #D3A029">130,000</div>
-                    <div id="donate" style="font-size: 18px; font-weight: 600">People in the Horn of Africa are
+                    <div style="font-size: 18px; font-weight: 600">People in the Horn of Africa are
                         on
                         <br>
                         the brink of death from starvation
@@ -76,7 +76,8 @@
         </div>
 
         {{-- Donation --}}
-        <div class="row py-0 mx-0 justify-content-center" style="background-color: #D3A029; width: 100%; margin: 0;">
+        <div id="donate" class="row py-0 mx-0 justify-content-center"
+            style="background-color: #D3A029; width: 100%; margin: 0;">
             <div class="col col-md-3 m-5 py-5" style="border-radius: 15px; background-color: white">
                 <div class="d-grid text-end">
                     <form action="{{ route('donasi.store') }}" method="POST">
@@ -233,8 +234,10 @@
                 </div>
             </div> --}}
 
+
             {{-- About Us --}}
-            <div class="container-fluid text-center align-content-center" style="background-color: white;height: 300px">
+            <div id="aboutUs" class="container-fluid text-center align-content-center"
+                style="background-color: white;height: 300px">
                 About Us
                 <div></div>
             </div>
