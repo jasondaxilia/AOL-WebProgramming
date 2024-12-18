@@ -1,12 +1,8 @@
 <?php
 
-use App\Http\Controllers\ArtikelController;
-use App\Http\Controllers\DonasiController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::post('/artikel', [ArtikelController::class, 'store']);
-Route::get('/', [DonasiController::class, 'getTotalDonation']);
-// Route::get('/', [ArtikelController::class, 'getArtikel']);
-
-
-Route::post('/donasi', [DonasiController::class, 'store'])->name('donasi.store');
+// Route::post('/artikel', [HomeController::class, 'artikelStore']);
+Route::get('/', [HomeController::class, 'index']);
+Route::post('/donasi', [HomeController::class, 'donasiStore'])->name('donasi.store');

@@ -49,7 +49,7 @@ class HomeController extends Controller
     //untuk view Home agar semuanya bisa tampil
     public function index()
     {
-        //untuk menampilkan 
+        //untuk menampilkan
         $totalDomestic = Donasi::where('tipedonasis', 'Domestic')->sum('totaldonasis');
         $totalInternational = Donasi::where('tipedonasis', 'International')->sum('totaldonasis');
         $totalDonation = Donasi::selectRaw('tipedonasis,SUM(totaldonasis) as total_ammount')->groupBy('tipedonasis')->get();
