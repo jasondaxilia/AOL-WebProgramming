@@ -255,10 +255,10 @@
 
                 <div class="col d-grid align-items-center py-5 gap-3" style="padding: 0; margin-left: 250px">
                     <div class="row" style="padding-left: 75px">
-                        <div class="d-flex gap-3" style="width: 750px; font-size: 85px;font-weight: 800">
+                        <div class="row d-flex gap-3" style="width: 750px; font-size: 85px;font-weight: 800">
                             Our Mission
                         </div>
-                        <div style="font-size: 30px; font-weight: 600">
+                        <div class="row" style="font-size: 30px; font-weight: 600">
                             1. Every child sleeps well-fed. <br>
                             2. Families access and grow nutritious food. <br>
                             3. Sustainable food systems leave no one behind.
@@ -267,5 +267,6 @@
                 </div>
             </div>
         </div>
+
     </div>
 @endsection
