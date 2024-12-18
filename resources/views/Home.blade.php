@@ -235,34 +235,37 @@
         </div>
 
         {{-- About Us --}}
-    <div class="row">
-        <div class="row" style="margin: 0; overflow: hidden; position: relative;">
-                <img src="{{ asset('img/BG.png') }}" alt="" 
-                 style="margin: 0; padding: 0; width: 100%; height: auto;">
-        <div style="position: absolute; top: 20%; left: 35%;">
-                <img src="{{ asset('img/Smile.png') }}" alt="" style="width: 750px; height: auto;">
-            </div>
-            <div style="color: white;position: absolute; font-size:25px; font-weight: 500; padding: 850px 0px 0px 0px; text-align:center ">
-            Zero Hunger is a platform dedicated to eradicating global hunger
-            <br>
-            in line with SDG 2: Zero Hunger. Our team of activists,
-            <br>
-            nutritionists, and environmentalists promotes sustainable
-            <br>
-            food practices to ensure universal access to nutritious food.
-    </div>
+        <div class="row">
+            <div class="row" style="margin: 0; overflow: hidden; position: relative;">
+                <img src="{{ asset('img/BG.png') }}" alt=""
+                    style="margin: 0; padding: 0; width: 100%; height: auto;">
+                <div style="position: absolute; top: 20%; left: 35%;">
+                    <img src="{{ asset('img/Smile.png') }}" alt="" style="width: 750px; height: auto;">
+                </div>
+                <div
+                    style="color: white;position: absolute; font-size:25px; font-weight: 500; padding: 850px 0px 0px 0px; text-align:center ">
+                    Zero Hunger is a platform dedicated to eradicating global hunger
+                    <br>
+                    in line with SDG 2: Zero Hunger. Our team of activists,
+                    <br>
+                    nutritionists, and environmentalists promotes sustainable
+                    <br>
+                    food practices to ensure universal access to nutritious food.
+                </div>
 
-    <div class="col d-grid align-items-center py-5 gap-3" style="padding: 0; margin-left: 250px">
-        <div class="row" style="padding-left: 75px">
-            <div class="d-flex gap-3" style="width: 750px; font-size: 85px;font-weight: 800">
-             Our Mission
-            </div>
-            <div style="font-size: 30px; font-weight: 600">
-                1. Every child sleeps well-fed. <br>
-                2. Families access and grow nutritious food. <br>
-                3. Sustainable food systems leave no one behind.
+                <div class="col d-grid align-items-center py-5 gap-3" style="padding: 0; margin-left: 250px">
+                    <div class="row" style="padding-left: 75px">
+                        <div class="d-flex gap-3" style="width: 750px; font-size: 85px;font-weight: 800">
+                            Our Mission
+                        </div>
+                        <div style="font-size: 30px; font-weight: 600">
+                            1. Every child sleeps well-fed. <br>
+                            2. Families access and grow nutritious food. <br>
+                            3. Sustainable food systems leave no one behind.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
-
+    </div>
 @endsection
