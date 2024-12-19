@@ -1,6 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+![Logo](public/img/logo.png)
 
 
 
