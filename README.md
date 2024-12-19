@@ -1,19 +1,22 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Alexander Joshua Jason Komari - Nim - Job Desk
-Jason Daxilia - 
-Jourdy Limdrian - 
-Muhammad Nabil Mufid Thorif - 
-Deskripsi SDG
+![Product Name Screen Shot][product-screenshot]
 
-### Link Hosting
+* Alexander Joshua Jason Komari - 2602103034 - Fitur Donation dan Documentation
+* Jason Daxilia - 2602102012 - Fitur Artikel, Fitur Home Page, Header, Footer
+* Jourdy Limdrian - 202104882 - UI/UX, Navbar dan Documentation
+* Muhammad Nabil Mufid Thorif - 2602101520 - UI/UX dan Fitur About Us
 
-### Built With
+SDG 2 = Zero Hunger
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Zero Hunger adalah salah satu SDG yang diterapkan oleh PBB dimana bertujuan untuk memastikan setiap orang memiliki akses terhadap makanan yang cukup dan bergizi. Melalui Website ini, kami berharap dapat menjadi salah satu pendukung hal tersebut terealisasikan. Website ini memiliki 2 fitur utama yaitu :
+* Fitur Donasi > User dapat memberikan donasi berupa dana yang dimana dapat membantu untuk menyediakan makanan yang cukup dan bergizi bagi mereka yang membutuhkan.
+* Artikel > User dapat membaca artikel yang berhubungan dengan masalah kelaparan, dan juga artikel terkini terkait ketahanan pangan.
+  
+## Link Hosting
 
+## Built With
 
 * [![Laravel][Laravel.com]][Laravel-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
@@ -23,11 +26,11 @@ This section should list any major frameworks/libraries used to bootstrap your p
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Tampilan, Struktur, Model, Routes, Database, Controller
+## Tampilan, Struktur, Model, Routes, Database, Controller
 
-### Fitur Utama
+## Fitur Utama
 
-### Contact
+## Contact
 
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
