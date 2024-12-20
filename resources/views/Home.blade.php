@@ -162,30 +162,28 @@
         </section>
 
         {{-- Total Donation --}}
-        <div class="" style="background-color: #D3A029">
-            <div class="" style="background-color: #D3A029; color: white">
-                <div class="container my-5">
-                    <div class="row justify-content-center" style="font-size: 50px; font-weight: 800;">
-                        TOTAL DONATION
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <div class="row justify-content-center"
-                                style="font-size: 60px; font-weight: 700; margin-bottom: 10px">
-                                Rp{{ number_format($totalDomestic, 0, ',', '.') }}
-                            </div>
-                            <div class="row justify-content-center" style="font-size: 35px; font-weight: 700">
-                                Domestic
-                            </div>
+        <div class=" py-4" style="background-color: #D3A029; color: white">
+            <div class="container my-5">
+                <div class="row justify-content-center" style="font-size: 50px; font-weight: 800;">
+                    TOTAL DONATION
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="row justify-content-center"
+                            style="font-size: 60px; font-weight: 700; margin-bottom: 10px">
+                            Rp{{ number_format($totalDomestic, 0, ',', '.') }}
                         </div>
-                        <div class="col">
-                            <div class="row justify-content-center"
-                                style="font-size: 60px; font-weight: 700; margin-bottom: 10px">
-                                Rp{{ number_format($totalInternational, 0, ',', '.') }}
-                            </div>
-                            <div class="row justify-content-center" style="font-size: 35px; font-weight: 700">
-                                International
-                            </div>
+                        <div class="row justify-content-center" style="font-size: 35px; font-weight: 700">
+                            Domestic
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row justify-content-center"
+                            style="font-size: 60px; font-weight: 700; margin-bottom: 10px">
+                            Rp{{ number_format($totalInternational, 0, ',', '.') }}
+                        </div>
+                        <div class="row justify-content-center" style="font-size: 35px; font-weight: 700">
+                            International
                         </div>
                     </div>
                 </div>
