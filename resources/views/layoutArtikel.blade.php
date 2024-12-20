@@ -15,29 +15,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
 </head>
 
-<body id="home">
+<body>
     <nav class="navbar navbar-expand-lg m-0 py-0">
         <div class="navbar container-fluid full-width fixed-top px-4"
             style="border-bottom: 2px solid black; background-color: white ; height: 100px;">
-            <a class="navbar-brand " href="#">
+            <a id="logo" onClick="window.location.reload();" class="navbar-brand">
                 <img src="{{ asset('img/Logo.png') }}" alt="LogoZeroHunger" width="200px">
             </a>
-            <ul class="navbar-nav h3 gap-3">
+            <ul class="navbar-nav h3 ">
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#donate">Donate!</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#artikel">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#aboutus">About
-                        Us</a>
+                    <a class="nav-link" href="{{ url('/') }}">Back To Home</a>
                 </li>
             </ul>
         </div>

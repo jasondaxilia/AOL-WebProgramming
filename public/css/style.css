@@ -1,5 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
+body {
+    font-family: montserrat;
+    padding-top: 100px;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+.page-link {
+    background-color: white;
+}
+.page-link.active {
+    background-color: #d3a029;
+}
+
+.nav-link {
+    font-weight: 700;
+    color: #d3a029;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #d3a029;
+    border-radius: 10px;
+}
+
+/* Donation */
 .radio-group label {
     font-family: "Montserrat", sans-serif;
 }
@@ -54,30 +88,18 @@
     border-color: #d3a029;
 }
 
-
+/* tombol findmore */
+#findMore {
+    font-weight: 600;
+    border: 4px solid #d3a029;
+    background-color: white;
+    color: black;
+    margin: 0;
+}
 #findMore:hover {
     background-color: #d3a029;
     color: #fff;
     margin: 0;
-}
-
-.page-link {
-    background-color: white;
-}
-.page-link.active {
-    background-color: #d3a029;
-}
-
-.nav-link {
-    font-weight: 700;
-    color: #d3a029;
-    border-radius: 10px;
-}
-
-.nav-link:hover {
-    color: white;
-    background-color: #d3a029;
-    border-radius: 10px;
 }
 
 /* pagination */
@@ -104,6 +126,7 @@
     color: #fff; /* Change text color for active page */
 }
 
+/* About Us */
 .background-image-about-us {
     background-image: url("../../public/img/BG.png");
 }

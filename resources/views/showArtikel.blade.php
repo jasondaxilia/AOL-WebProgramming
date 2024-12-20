@@ -1,7 +1,9 @@
-@extends('layout')
+@extends('layoutArtikel')
+
+
 
 @section('container')
-    <link rel="stylesheet" href="{{ asset('style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <div style=""></div>
     <div class="card d-block mx-auto mt-4" style="color: black; width: 65%">
         <div class="container p-5">
@@ -14,8 +16,7 @@
             <div class="mt-4">
                 <p>{{ $artikel->isiArtikel }}</p>
             </div>
-            <a id="findmore" href="{{ url()->previous() }}" class="btn"
-                style="background-color: #D3A029; font-weight: 600; color: white">Back</a>
+            <a id="findMore" href="{{ url()->previous() }}" class="btn">Back To Home</a>
         </div>
     </div>
 @endsection

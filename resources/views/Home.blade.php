@@ -222,8 +222,8 @@
                                                     {{ Str::limit($artikel->isiArtikel, 250) }}</div>
                                             </div>
                                             <div class="col ">
-                                                <a class="btn mt-3" href="/articles/{{ $artikel['id'] }}"
-                                                    style="border: 4px solid #D3A029; font-weight: 700"> Find More
+                                                <a id="findMore" class="btn mt-3"
+                                                    href="/articles/{{ $artikel['id'] }}"> Find More
                                                 </a>
                                             </div>
                                         </div>
