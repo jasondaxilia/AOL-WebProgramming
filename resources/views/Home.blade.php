@@ -222,9 +222,9 @@
                                                     {{ Str::limit($artikel->isiArtikel, 250) }}</div>
                                             </div>
                                             <div class="col ">
-                                                <button id="findMore" type="button" class="btn mt-3"
-                                                    style="border: 4px solid #D3A029 ; font-weight: 700">Find
-                                                    More</button>
+                                                <a class="btn mt-3" href="/articles/{{ $artikel['id'] }}"
+                                                    style="border: 4px solid #D3A029; font-weight: 700"> Find More
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -238,6 +238,7 @@
                 </div>
             </div>
         </section>
+
         {{-- About Us --}}
         <section id="aboutus" style="padding-top: ">
             <div class="row p-0 m-0">
@@ -245,7 +246,7 @@
                     <img class="card-img " src="{{ asset('img/BG.png') }}" alt="" style="">
                     <div class="card-img-overlay" style="top: 20%">
                         <img class="mx-auto d-block" src="{{ asset('img/Smile.png') }}" alt="" style="">
-                        <p class="card-text text-center h2 text-white">
+                        <p class="card-text text-center text-white" style="font-size: 28px; font-weight: 500">
                             Zero Hunger is a platform dedicated to eradicating global hunger
                             <br>
                             in line with SDG 2: Zero Hunger. Our team of activists,

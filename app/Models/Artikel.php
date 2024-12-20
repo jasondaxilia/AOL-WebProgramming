@@ -10,6 +10,7 @@ class Artikel extends Model
 {
     //
     use HasFactory, HasApiTokens;
+    protected $primarykey = 'id';
     protected $fillable = ['judulArtikel', 'namaPenulisArtikel', 'isiArtikel', 'tanggalArtikel', 'artikelImagePath'];
 
 }

@@ -18,19 +18,21 @@
     <style>
         body {
             font-family: montserrat;
+            padding-top: 100px;
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="navbar container-fluid full-width fixed-top py-2 px-5" style="background-color: white; ">
+    <nav class="navbar navbar-expand-lg m-0 py-0">
+        <div class="navbar container-fluid full-width fixed-top px-4"
+            style="border-bottom: 2px solid black; background-color: white ; height: 100px;">
             <a class="navbar-brand " href="#">
                 <img src="{{ asset('img/Logo.png') }}" alt="LogoZeroHunger" width="200px">
             </a>
             <ul class="navbar-nav h3 gap-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="#heroImage">Home</a>
+                    <a class="nav-link" href="/#heroImage">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#donate">Donate!</a>
@@ -50,7 +52,7 @@
         @yield('container')
     </div>
 
-    <footer class="d-flex">
+    <footer class="d-flex mt-4">
         <div class="container-fluid d-flex justify-content-center" style="background-color: #D3A029">
             <div class="row justify-content-center" style="padding: 0">
                 <div class="col align-items-center justify-content-center my-5">
