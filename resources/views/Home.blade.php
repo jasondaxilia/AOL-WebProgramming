@@ -253,23 +253,23 @@
             </div>
 
             <div class="row mb-3">
-                <div class="col">
+                <div class="row">
                     <div class="row justify-content-center"
                         style="font-size: 60px; font-weight: 700; margin-bottom: 10px">
                         Our Vision
                     </div>
-                    <div class="row justify-content-center" style="font-size: 35px; font-weight: 700">
+                    <div class="row justify-content-center" style="font-size: 20px; font-weight: 700">
                         1. Raise Awareness <br>
                         2. Provide Support <br>
                         3. Empower Change
                     </div>
                 </div>
-                <div class="col">
+                <div class="row">
                     <div class="row justify-content-center"
                         style="font-size: 60px; font-weight: 700; margin-bottom: 10px">
                         Our Mission
                     </div>
-                    <div class="row justify-content-center" style="font-size: 35px; font-weight: 700">
+                    <div class="row justify-content-center" style="font-size: 20px; font-weight: 700">
                         1. Every child sleeps well-fed. <br>
                         2. Families access and grow nutritious food. <br>
                         3. Sustainable food systems leave no one behind.
