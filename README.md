@@ -35,7 +35,12 @@ To get a local copy up and running follow these simple example steps.
   ![gambar](https://github.com/user-attachments/assets/9a6b046f-c1d0-4da0-b382-1a12cf9b49da)
 
 * Controller >
-* Database 
+  
+  
+* Database > 
+  ![gambar](https://github.com/user-attachments/assets/fd3fabf9-bb8a-470e-b2a8-95fa68a47f41)
+  ![gambar](https://github.com/user-attachments/assets/d319c3c3-fc9e-4f03-af1e-c8cb8485d7d6)
+
 * Tampilan
 * Struktur
   
