@@ -164,9 +164,8 @@
         {{-- Total Donation --}}
         <div class="" style="background-color: #D3A029">
             <div class="" style="background-color: #D3A029; color: white">
-                <div class="container">
-                    <div class="row justify-content-center"
-                        style="font-size: 50px; font-weight: 800; margin-top: 75px; margin-bottom: 50px">
+                <div class="container my-5">
+                    <div class="row justify-content-center" style="font-size: 50px; font-weight: 800;">
                         TOTAL DONATION
                     </div>
                     <div class="row mb-3">
