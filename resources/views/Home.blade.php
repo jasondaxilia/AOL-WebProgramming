@@ -242,7 +242,6 @@
             </div>
         </section>
         {{-- About Us --}}
-<<<<<<< HEAD
         <section id="aboutus" style="padding-top: ">
             <div class="row p-0 m-0">
                 <div class="card border-0 p-0 ">
@@ -258,40 +257,6 @@
                             <br>
                             food practices to ensure universal access to nutritious food.
                         </p>
-                        <div class="card-text row text-center"
-                            style="color: white;font-size:25px; font-weight: 500; margin: 0">
-                        </div>
-=======
-        <div class="row" style="margin: 0px; overflow: hidden">
-            <img src="{{ asset('img/BG.png') }}" alt="" width="100%" style="padding: 0 ;position: relative">
-            <div class="d-grid justify-content-center gap-3" style="margin-top: 300px ;position: absolute">
-                <div class="row justify-content-center">
-                    <img src="{{ asset('img/Smile.png') }}" alt="" style="width: 750px; height: auto;">
-                </div>
-                <div class="row text-center" style="color: #ffffff;font-size:25px; font-weight: 500; text-align:center ">
-                    Zero Hunger is a platform dedicated to eradicating global hunger
-                    <br>
-                    in line with SDG 2: Zero Hunger. Our team of activists,
-                    <br>
-                    nutritionists, and environmentalists promotes sustainable
-                    <br>
-                    food practices to ensure universal access to nutritious food.
-                </div>
-            </div>
-
-            <div class="row mb-3 mt-2">
-                <div class="row mb-5">
-                    <div class="row justify-content-center"
-                        style="font-size: 60px; font-weight: 700; margin-bottom: 10px">
-                        Our Vision
-                    </div>
-                    <div class="row text-center" style="font-size: 30px; font-weight: 450; width: 50%; margin-left: auto; margin-right: auto;">
-                        Achieving SDG 2, Zero Hunger, requires a focused approach. First, 
-                        we must raise awareness about the pressing issues of hunger and malnutrition,
-                        ensuring that communities understand their impact. Next, we should provide support by delivering essential resources, such as nutritious food,
-                        farming tools, and education on sustainable agriculture. Finally, we need to empower change by building resilience and self-reliance,
-                        helping communities create sustainable solutions to break the cycle of hunger for the long term.
->>>>>>> 148c17b8a28ded81a77afb4c5b61935bc2e5c99f
                     </div>
                 </div>
                 <div class="row my-3">
@@ -311,7 +276,6 @@
                             helping communities create sustainable solutions to break the cycle of hunger for the long term.
                         </div>
                     </div>
-<<<<<<< HEAD
                     <div class="row">
                         <div class="row justify-content-center"
                             style="font-size: 60px; font-weight: 700; margin-bottom: 10px">
@@ -326,13 +290,6 @@
                             By building sustainable food systems that prioritize inclusivity and equity, we aim to leave no
                             one behind in the fight against hunger and malnutrition.
                         </div>
-=======
-                    <div class="row text-center" style="font-size: 30px; font-weight: 450; width: 50%; margin-left: auto; margin-right: auto;">
-                        Our mission is to create a world where every child sleeps well-fed,
-                        free from the pains of hunger. We strive to empower families with access
-                        to nutritious food and the resources needed to grow their own, fostering resilience and self-reliance.
-                        By building sustainable food systems that prioritize inclusivity and equity, we aim to leave no one behind in the fight against hunger and malnutrition.
->>>>>>> 148c17b8a28ded81a77afb4c5b61935bc2e5c99f
                     </div>
                 </div>
             </div>
