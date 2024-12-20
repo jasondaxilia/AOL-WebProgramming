@@ -258,7 +258,7 @@
                         style="font-size: 60px; font-weight: 700; margin-bottom: 10px">
                         Our Vision
                     </div>
-                    <div class="row text-center" style="font-size: 30px; font-weight: 45gw mau b0; width: 50%; margin-left: auto; margin-right: auto;">
+                    <div class="row text-center" style="font-size: 30px; font-weight: 450; width: 50%; margin-left: auto; margin-right: auto;">
                         Achieving SDG 2, Zero Hunger, requires a focused approach. First, 
                         we must raise awareness about the pressing issues of hunger and malnutrition,
                         ensuring that communities understand their impact. Next, we should provide support by delivering essential resources, such as nutritious food,
