@@ -240,12 +240,12 @@
         </section>
 
         {{-- About Us --}}
-        <section id="aboutus" style="padding-top: ">
+        <section id="aboutus">
             <div class="row p-0 m-0">
                 <div class="card border-0 p-0 ">
-                    <img class="card-img " src="{{ asset('img/BG.png') }}" alt="" style="">
+                    <img class="card-img " src="{{ asset('img/BG.png') }}" alt="">
                     <div class="card-img-overlay" style="top: 20%">
-                        <img class="mx-auto d-block" src="{{ asset('img/Smile.png') }}" alt="" style="">
+                        <img class="mx-auto d-block" src="{{ asset('img/Smile.png') }}" alt="">
                         <p class="card-text text-center text-white" style="font-size: 28px; font-weight: 500">
                             Zero Hunger is a platform dedicated to eradicating global hunger
                             <br>
